@@ -10,7 +10,8 @@ README Reqs:
         The usefulness comes from being able to view what is in stock, and add/remove/update the inventory as they see fit.
         This will be developed into a fully developed elevator pitch
 
-    A list of the technologies used.
+    A list of the technologies used. -ln 22
+
     A list of installation steps for the app itself and any dependencies - how would another developer run your site locally?
     Link to your user stories - who are your users, what do they want, and why?
     Link to your wireframes – sketches of major views / interfaces in your application.
@@ -49,6 +50,7 @@ Product Vision:
 
 
 User-Story: (Shopper)
+Someone who is viewing the site to see what is in stock, and potentially make a purchase.
 
     On the homepage user will have a navbar that allows them to login, or signup. 
         On the front of this page there will be images of the products displayed, (perhaps a carousel), a statement about the company, etc.
@@ -65,6 +67,7 @@ User-Story: (Shopper)
 
 
 Admin User-Story: (Employee)
+Someone who would be working for the company to make changes to the inventory, or relay info about said inventory to use in market research/accounting/marketing/etc.
         
     As an admin, the user will be able to delete or update an item from the show page.
 
