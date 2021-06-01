@@ -21,4 +21,10 @@ const userSchema = new Mongoose.Schema(
             required: [true, "A gear type must be provided"],
         }
     }
-)
+);
+
+// Model
+const User = mongoose.model("User", userSchema);
+
+// Export
+module.exports = User;

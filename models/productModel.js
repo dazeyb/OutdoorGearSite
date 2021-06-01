@@ -29,4 +29,11 @@ const productSchema = new Mongoose.Schema(
             required: [true, "A price must be provided"],
         }
     }
-)
+);
+
+// Model
+const Product = mongoose.model("Product", productSchema);
+
+// Export
+module.exports = Product;
+
