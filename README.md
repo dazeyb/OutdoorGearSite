@@ -3,7 +3,13 @@ A capstone project for inventory management. Could be scaled to be an ecommerce 
 
 README Reqs:
     A link to your hosted working app.
+        https://git.generalassemb.ly/dazeyb/capstone
+
     A paragraph-long description (elevator pitch) of your project.
+        This project will be a inventory management app that a company could feasibly convert to an ecommerce store as well.
+        The usefulness comes from being able to view what is in stock, and add/remove/update the inventory as they see fit.
+        This will be developed into a fully developed elevator pitch
+
     A list of the technologies used.
     A list of installation steps for the app itself and any dependencies - how would another developer run your site locally?
     Link to your user stories - who are your users, what do they want, and why?
@@ -13,6 +19,10 @@ README Reqs:
 
 
 Technologies Used:
+
+    MongoDB
+    Express
+    NodeJS
 
 
 Project Guidelines:
@@ -24,26 +34,21 @@ Project Guidelines:
 2 Models:
 
     Users: One regular, one authorized (to delete/update/etc.)
-        
-        Stretch Goals: 
-            Reference who altered/deleted posts
-            Favorite products/wishlist
 
 
     Inventory Items:
-            Title
-            Img
-            Description
-            Price
-            Stock
-
+            Name: Name of product
+            Img: URL to img
+            Description: Short blurb describing the product
+            Price: $$$
+            Stock: Amount left in inventory
             Type of Product: To enable different search filters
 
 
 Product Vision: 
 
 
-User-Story: 
+User-Story: (Shopper)
 
     On the homepage user will have a navbar that allows them to login, or signup. 
         On the front of this page there will be images of the products displayed, (perhaps a carousel), a statement about the company, etc.
@@ -59,7 +64,7 @@ User-Story:
 
 
 
-Admin User-Story:
+Admin User-Story: (Employee)
         
     As an admin, the user will be able to delete or update an item from the show page.
 
@@ -103,18 +108,25 @@ Page Layouts:
             Footer
 
 
+
+    Show Page:
+
+            Navbar
     
 
 
 Stretch Goals: 
 
     Searchbar
-            
+
     Error handling
 
-    Carousel Links to Pages
+    Carousel: and imgs link to show pages
 
     Changes made to database are logged somewhere (Log page? New Model?)
+        Reference who altered/deleted posts
+    
+    Favorite products/wishlist
 
     Integrate an API (widget!)
 
