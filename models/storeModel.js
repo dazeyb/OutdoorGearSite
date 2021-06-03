@@ -8,6 +8,7 @@ const storeSchema = new Mongoose.Schema(
             type: String,
             required: [true, "A store name must be provided"],
         },
+        product: [{ type: mongoose.Schema.Types.ObjectId, ref:"Product"}]
     },
     {
         timestamps: true,
