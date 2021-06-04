@@ -64,7 +64,7 @@
 
     //  Home
     app.get('/', (req, res) => {
-        // res.send('Root Page');
+
         res.render('Home');
     });
 
@@ -74,6 +74,11 @@
         res.render('SignIn');
     });
 
+    //  Stores
+    app.get('/stores', (req, res) => {
+
+        res.render('Stores');
+    });
 
 
 /** Server Listener */

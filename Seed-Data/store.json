@@ -1,6 +1,23 @@
 {
 {
-    "name": "Store 1",
+    "name": "San Diego",
+    "products": [{amount: {type: Number}, product: {type: mongoose.Schema.Types.ObjectId, ref: "Product"}}]
+
+}
+}
+
+
+{
+{
+    "name": "Los Angeles",
+    "products": [{amount: {type: Number}, product: {type: mongoose.Schema.Types.ObjectId, ref: "Product"}}]
+
+}
+}
+
+{
+{
+    "name": "San Francisco",
     "products": [{amount: {type: Number}, product: {type: mongoose.Schema.Types.ObjectId, ref: "Product"}}]
 
 }
