@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
 }
 
 .deco-none {
@@ -20,11 +23,35 @@ a:hover {
     cursor
 }
 
+/* Components +++++++++++++++++++++++++++++++++ */
+
+
+    /* NavBar */
+    .navbar {
+        background-color: #222;
+        color: rgb(234, 236, 233);
+        height: 70px;
+    }
+
+    .logo {
+        /* font-size: 45px; */
+        margin-left: 20px;
+    }
+
+    .nav-link {
+        /* font-family: ; */
+        font-size: 15px;
+        font-weight: 500;
+        margin-left: 35px;
+        letter-spacing: 2px;
+    }
+
+    .logout {
+        margin-right: 20px;
+    }
+
 
 /* Landing Page ================================ */
-.logo {
-    /* font-size: 45px; */
-}
 
 
 /* Pick Store ================================ */
