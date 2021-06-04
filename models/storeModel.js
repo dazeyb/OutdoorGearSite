@@ -1,14 +1,14 @@
 /** Schema for Users */
 
-const { Mongoose } = require("mongoose");
+const mongoose = require("mongoose");
 
-const storeSchema = new Mongoose.Schema(
+const storeSchema = new mongoose.Schema(
     {
         name: {
             type: String,
             required: [true, "A store name must be provided"],
         },
-        product: [{ type: mongoose.Schema.Types.ObjectId, ref:"Product"}]
+        // product: [{ type: mongoose.Schema.Types.ObjectId, ref:"Product"}]
     },
     {
         timestamps: true,

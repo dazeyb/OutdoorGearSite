@@ -1,8 +1,8 @@
 /** Schema for Products */
 
-const { Mongoose } = require("mongoose");
+const mongoose = require("mongoose");
 
-const productSchema = new Mongoose.Schema(
+const productSchema = new mongoose.Schema(
     {
         name: {
             type: String,

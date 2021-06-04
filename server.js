@@ -7,6 +7,8 @@
    
     const session = require("express-session");
 
+    const ctrl = require("./controllers");
+
 
 // MongoStore will be changed
 // const MongoStore = require("connect-mongo");
@@ -54,17 +56,16 @@
     
 /** Controllers */
 
-    const controllers = require(".controllers");
 
-    // Need to add controllers here
-    // app.use("/", controllers.)
+    // app.use("/", ctrl)
 
 /** Routes */
 
 
     //  Home Route
     app.get('/', (req, res) => {
-        res.send('Root Page');
+        // res.send('Root Page');
+        res.render('Home');
     });
 
 
