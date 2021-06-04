@@ -62,10 +62,16 @@
 /** Routes */
 
 
-    //  Home Route
+    //  Home
     app.get('/', (req, res) => {
         // res.send('Root Page');
         res.render('Home');
+    });
+
+    //  Sign In
+    app.get('/signin', (req, res) => {
+
+        res.render('SignIn');
     });
 
 
