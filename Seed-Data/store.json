@@ -1,7 +1,7 @@
 {
 {
     "name": "Store 1",
-    "products": [{}]
+    "products": [{amount: {type: Number}, product: {type: mongoose.Schema.Types.ObjectId, ref: "Product"}}]
 
 }
 }
