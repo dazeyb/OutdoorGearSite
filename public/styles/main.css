@@ -1,12 +1,42 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
     background-color: rgb(190, 190, 190);
 }
 
+.deco-none {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    cursor
+}
+
+
+/* Landing Page */
 .logo {
     font-size: 45px;
+}
+
+
+/* Pick Store */
+.stores-flexbox {
+
+}
+
+
+/* Search Page */
+
+.left-panel {
+
+}
+
+.right-panel {
+    
 }

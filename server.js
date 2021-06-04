@@ -57,6 +57,7 @@
 /** Controllers */
 
 
+    // This breaks it for now
     // app.use("/", ctrl)
 
 /** Routes */
@@ -65,7 +66,7 @@
     //  Home
     app.get('/', (req, res) => {
 
-        res.render('Home');
+        res.render('Landing');
     });
 
     //  Sign In
@@ -78,6 +79,12 @@
     app.get('/stores', (req, res) => {
 
         res.render('Stores');
+    });
+
+    //  Search (Temporary path, need to add to controllers and input context)
+    app.get('/search', (req, res) => {
+
+        res.render('Search');
     });
 
 

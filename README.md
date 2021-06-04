@@ -120,6 +120,8 @@ Page Layouts:
 
 Stretch Goals: 
 
+    Custom Cursor: https://web.archive.org/web/20170605131602/http://www.ajaxblender.com/howto-create-custom-image-cursors.html
+
     Searchbar
 
     Error handling
