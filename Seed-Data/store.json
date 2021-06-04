@@ -1,0 +1,13 @@
+{
+{
+    "name": "Store 1",
+    "products": [{amount: {type: Number}, product: {type: mongoose.Schema.Types.ObjectId, ref: "Product"}}]
+
+}
+}
+
+
+// {
+//     name: "InsertName",
+//     products: [{3, 12389571238957298572}, {34, 135352525235}]
+// }

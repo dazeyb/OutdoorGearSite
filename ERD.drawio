@@ -5,37 +5,13 @@
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="2" value="&lt;div style=&quot;text-align: left ; font-size: 28px&quot;&gt;&lt;font style=&quot;font-size: 28px&quot;&gt;User&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 28px&quot;&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Name: String&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Username: String&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Password: String&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;Admin: Boolean&lt;/div&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="40" y="20" width="300" height="260" as="geometry"/>
+                    <mxGeometry x="250" y="20" width="300" height="260" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-size: 28px&quot;&gt;Product&lt;/span&gt;&lt;/div&gt;&lt;font&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-size: 28px&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-size: 28px&quot;&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Name: String&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 28px&quot;&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Description: String&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 28px&quot;&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Img: String URL&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 28px&quot;&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Product Type: String&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 28px&quot;&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Stock: Number&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 28px&quot;&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Price: Number&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="470" y="290" width="345" height="320" as="geometry"/>
+                <mxCell id="3" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-size: 28px&quot;&gt;Product&lt;/span&gt;&lt;/div&gt;&lt;font&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-size: 28px&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-size: 28px&quot;&gt;ID: Number&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-size: 28px&quot;&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Name: String&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 28px&quot;&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Description: String&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 28px&quot;&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Img: String URL&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 28px&quot;&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Product Type: String&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 28px&quot;&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Price: Number&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="320" width="345" height="320" as="geometry"/>
                 </mxCell>
-                <mxCell id="26" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-size: 31px&quot;&gt;Store&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-size: 31px&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;font&gt;&lt;span style=&quot;font-size: 31px&quot;&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Name:&amp;nbsp; String&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="40" y="350" width="220" height="190" as="geometry"/>
-                </mxCell>
-                <mxCell id="27" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.006;entryY=0.475;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="26" target="3">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="400" y="350" as="sourcePoint"/>
-                        <mxPoint x="450" y="300" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="28" value="" style="endArrow=none;html=1;entryX=-0.006;entryY=0.434;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="3">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="440" y="440" as="sourcePoint"/>
-                        <mxPoint x="430" y="380" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="29" value="" style="endArrow=none;html=1;" edge="1" parent="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="440" y="440" as="sourcePoint"/>
-                        <mxPoint x="470" y="458" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="30" value="" style="endArrow=none;html=1;" edge="1" parent="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="280" y="430" as="sourcePoint"/>
-                        <mxPoint x="280" y="460" as="targetPoint"/>
-                    </mxGeometry>
+                <mxCell id="26" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-size: 31px&quot;&gt;Store&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-size: 31px&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;font&gt;&lt;span style=&quot;font-size: 31px&quot;&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Name:&amp;nbsp; String&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Products: [ { amount, id } ]&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="320" width="380" height="320" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
