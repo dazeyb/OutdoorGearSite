@@ -19,10 +19,6 @@ const productSchema = new mongoose.Schema(
         type: {
             type: String,
             required: [true, "A gear type must be provided"],
-        },    
-        stock: {
-            type: Number,
-            required: [true, "An img url must be provided"],
         },
         price: {
             type: Number,

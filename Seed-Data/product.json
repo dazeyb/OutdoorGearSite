@@ -1,39 +1,33 @@
 {
+    "product":
+[   
 {
-    "name": 
-    "description": 
-    "img": 
-    "type": 
-    "price": 
-}
-
-{
-    "name": 
-    "description": 
-    "img": 
-    "type": 
-    "price": 
+    "name": "Black Diamong Harness - Men's",
+    "description": "",
+    "img": "https://www.rei.com/media/321e994e-4d01-4b92-a500-a6a18c41fdab",
+    "type": "Climbing",
+    "price": 55
 }
 {
-    "name": 
-    "description": 
-    "img": 
-    "type": 
-    "price": 
+    "name": "Edelrid Tommy Caldwell Pro DuoTec 9.6mm Dry Rope",
+    "description": "This Edelrid Pro DuoTec 9.6mm dry rope was developed together with top climber Tommy Caldwell. Its very high sheath proportion makes it ideal for working routes or big-wall climbing.",
+    "img": "https://www.rei.com/media/58f6b1f2-c724-425c-a5d0-34ae40699059?size=784x588",
+    "type": "Climbing",
+    "price": 230
 }
 {
-    "name": 
-    "description": 
-    "img": 
-    "type": 
-    "price": 
+    "name": "La Sportiva Katana Lace Climbing Shoes",
+    "description": "La Sportiva Katana Lace climbing shoes are constructed around P3® technology for excellent performance and comfort during gym climbs, bouldering, sport routes and beyond.",
+    "img": "https://www.rei.com/media/47df55fc-0b69-44c9-b941-c220f40f26b8?size=784x588",
+    "type": "Climbing",
+    "price": 195
 }
 {
-    "name": 
-    "description": 
-    "img": 
-    "type": 
-    "price": 
+    "name": "Scarpa Instinct VS Climbing Shoes - Women's",
+    "description": "Built for sport climbers and boulderers who demand sensitivity and power, the Scarpa Instinct VS women's climbing shoes have a precise fit, tough synthetic uppers and grippy soles to help you send.",
+    "img": "https://www.rei.com/media/a28c57e3-839e-44c5-a56b-dc6c4f626a1e?size=784x588",
+    "type": "Climbing",
+    "price": 189
 }
 {
     "name": 
@@ -42,6 +36,14 @@
     "type": 
     "price": 
 }
+{
+    "name": 
+    "description": 
+    "img": 
+    "type": 
+    "price": 
+}
+]
 }
 
 
@@ -50,3 +52,5 @@
 // "img": 
 // "type": 
 // "price": 
+
+module.exports require product
