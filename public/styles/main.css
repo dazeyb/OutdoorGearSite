@@ -1,9 +1,9 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-}
+} */
 
 body {
     background-color: rgb(190, 190, 190);
@@ -21,7 +21,7 @@ a:hover {
 
 /* Landing Page */
 .logo {
-    font-size: 45px;
+    /* font-size: 45px; */
 }
 
 
@@ -38,5 +38,5 @@ a:hover {
 }
 
 .right-panel {
-    
+
 }
