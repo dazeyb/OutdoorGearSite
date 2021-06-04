@@ -1,17 +1,19 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-} */
-
-body {
-    background-color: rgb(190, 190, 190);
 }
 
 .deco-none {
     text-decoration: none;
 }
+
+body {
+    background-color: rgb(190, 190, 190);
+}
+
+
 
 a:hover {
     cursor: pointer;
@@ -19,19 +21,19 @@ a:hover {
 }
 
 
-/* Landing Page */
+/* Landing Page ================================ */
 .logo {
     /* font-size: 45px; */
 }
 
 
-/* Pick Store */
+/* Pick Store ================================ */
 .stores-flexbox {
 
 }
 
 
-/* Search Page */
+/* Search Page ================================ */
 
 .left-panel {
 

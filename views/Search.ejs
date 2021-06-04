@@ -6,63 +6,31 @@
 
 <body>
 
+    <div class="navbar">
+        <span class="logo">
+            Logo
+        </span>
+        <ul class="nav justify-content-end">
+<!--             
+                {% if user.is_authenticated %}
 
-    <nav class="navbar navba-expand-sm navbar-light bg-light">
+                    <li class="nav-item"> <a class="nav-link" href="/Landing">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="/Stores">Pick Store</a> </li>
+                    <li class="nav-item logout"> <a class="nav-link" href="/Logout">Logout</a> </li>
 
+                {% else %} -->
 
-        <a href="#" class="navbar-brand mb-0 h1">
-            <img class="d-inline-block align-top" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.sv" alt="" width="30" height="30"/>
+                <li class="nav-item"> <a class="nav-link" href="/Landing">Home</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="/Stores">Pick Store</a> </li>
+                <li class="nav-item logout"> <a class="nav-link" href="/SignIn">Sign-In</a> </li>
 
-            Navbar
-        </a>
+                    
+                <!-- {% endif %} -->
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a href="#" class="nav-link">
-                        Home
-                    </a>
-                </li>
-
-                <li class="nav-item active">
-                    <a href="#" class="nav-link">
-                        Features
-                    </a>
-                </li>
-
-                <li class="nav-item active">
-                    <a href="#" class="nav-link">
-                        Pricing
-                    </a>
-                </li>
+        </ul>
+    </div>
 
 
-
-            </ul>
-
-
-        </div>
-
-    </nav>
-
-
-
-    <!-- <header class="header">
-        <nav class="navbar navbar-style">
-            <div class="header-container">
-                <div class="navbar-header">
-                    <a href="">
-                        <!-- <img class="logo" src="logo.png"> -->
-                        <!-- <i class="fab fa-suse logo"></i>
-                    </a>
-                    <div>CompanyName</div>
-                    <div>Corporate # 555-5555</div>
-                    <a class="deco-none" href="">Nav thing</a>
-                    <a class="deco-none" href="">Nav thing 2</a>
-                </div>
-            </div>
-        </nav>
-    </header> --> -->
 
 
 
