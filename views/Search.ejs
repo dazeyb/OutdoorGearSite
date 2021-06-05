@@ -11,30 +11,38 @@
             Logo
         </span>
         <ul class="nav justify-content-end">
-<!--             
-                {% if user.is_authenticated %}
 
-                    <li class="nav-item"> <a class="nav-link" href="/Landing">Home</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="/Stores">Pick Store</a> </li>
-                    <li class="nav-item logout"> <a class="nav-link" href="/Logout">Logout</a> </li>
-
-                {% else %} -->
 
                 <li class="nav-item"> <a class="nav-link" href="/Landing">Home</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="/Stores">Pick Store</a> </li>
                 <li class="nav-item logout"> <a class="nav-link" href="/SignIn">Sign-In</a> </li>
 
-                    
-                <!-- {% endif %} -->
 
         </ul>
     </div>
 
 
 
+    <div class="products-container">
 
 
-    <section class="left-panel">
+
+        <ul>
+                <% products.forEach(product => { %>
+
+                <li><%= product.name %></li>
+
+                <% })%>
+        </ul>
+
+
+
+
+    </div>
+
+
+
+    <!-- <section class="left-panel">
 
         <form action="">Form1</form>
         <form action="">Form1</form>
@@ -56,7 +64,7 @@
 
 <footer>
 
-</footer>
+</footer> -->
 
 
 

@@ -82,10 +82,7 @@
     });
 
     //  Search (Temporary path, need to add to controllers and input context)
-    app.get('/search', (req, res) => {
-
-        res.render('Search');
-    });
+    app.use('/', ctrl.products);
 
 
 /** Server Listener */
@@ -96,6 +93,4 @@
     });
 
 
-    
-    
 module.exports = app;

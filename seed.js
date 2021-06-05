@@ -11,3 +11,6 @@ db.Product.deleteMany({}, (err, deletedProducts) => {
         process.exit();
     });
 });
+
+
+//  Command to populate db with data: node seed.js
