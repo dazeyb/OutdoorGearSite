@@ -81,8 +81,14 @@
         res.render('Stores');
     });
 
-    //  Search (Temporary path, need to add to controllers and input context)
+    //  Search
+    
+    // Show
+
+    
     app.use('/', ctrl.products);
+    // app.use('/', ctrl.store);
+    // app.use('/', ctrl.users);
 
 
 /** Server Listener */
