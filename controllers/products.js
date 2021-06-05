@@ -28,10 +28,10 @@ router.get("/search/:id", function (req, res) {
  
         db.Product.findById(req.params.id)
 
-        .exec(function (err, foundProducts) {
+        .exec(function (err, foundProduct) {
         if (err) return res.send(err);
         
-        const context = { products: foundProducts };
+        const context = { product: foundProduct };
         return res.render("Show", context);
     });
 });
