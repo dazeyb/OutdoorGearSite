@@ -1,0 +1,22 @@
+<%- include("partials/base.ejs"); %>
+
+    <title>Edit</title>
+</head>
+
+<body>
+    
+    <form action="/search/<%= product._id%>?_method=PUT" method="POST">
+        <p>
+            <input
+                type="text"
+                name="name"
+                placeholder="<%= product.name %>"
+                value="<%= product.name %>"
+            />
+        </p>
+
+        <input type="submit" value="Update " />
+    </form>
+
+</body>
+</html>

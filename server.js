@@ -57,17 +57,38 @@
 /** Controllers */
 
 
+    // This breaks it for now
     // app.use("/", ctrl)
 
 /** Routes */
 
 
-    //  Home Route
+    //  Home
     app.get('/', (req, res) => {
-        // res.send('Root Page');
-        res.render('Home');
+
+        res.render('Landing');
     });
 
+    //  Sign In
+    app.get('/signin', (req, res) => {
+
+        res.render('SignIn');
+    });
+
+    //  Stores
+    app.get('/stores', (req, res) => {
+
+        res.render('Stores');
+    });
+
+    //  Search
+    
+    // Show
+
+    
+    app.use('/', ctrl.products);
+    // app.use('/', ctrl.store);
+    // app.use('/', ctrl.users);
 
 
 /** Server Listener */
@@ -78,6 +99,4 @@
     });
 
 
-    
-    
 module.exports = app;

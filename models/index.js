@@ -4,6 +4,7 @@ require("dotenv").config();
 
 const dbUrl = process.env.MONGODB_URI;
 
+
 mongoose
     .connect(dbUrl, {
         useNewUrlParser: true,
@@ -25,6 +26,7 @@ mongoose
 mongoose.connection.on("disconnected", function() {
     console.log("MongoDB disconnected");
 });
+
 
 module.exports = {
     Product: require("./productModel"),

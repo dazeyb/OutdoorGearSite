@@ -1,12 +1,78 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+}
+
+.deco-none {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
 }
 
 body {
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(255,255,255),
+    background-color: rgb(172, 43, 43);
 }
 
-.logo {
-    font-size: 45px;
+a:hover {
+    cursor: pointer;
+    cursor
+}
+
+/* Components +++++++++++++++++++++++++++++++++ */
+
+
+    /* NavBar */
+    .navbar {
+        background-color: #222;
+        color: rgb(234, 236, 233);
+        height: 70px;
+    }
+
+    .logo {
+        /* font-size: 45px; */
+        margin-left: 20px;
+    }
+
+    .nav-link {
+        /* font-family: ; */
+        font-size: 15px;
+        font-weight: 500;
+        margin-left: 35px;
+        letter-spacing: 2px;
+    }
+
+    .logout {
+        margin-right: 20px;
+    }
+
+
+/* Landing Page ================================ */
+
+
+/* Pick Store ================================ */
+.stores-flexbox {
+
+}
+
+
+/* Search Page ================================ */
+
+.products-container {
+    display: flex;
+}
+
+.left-panel {
+
+}
+
+.right-panel {
+
 }
