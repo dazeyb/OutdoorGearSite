@@ -19,7 +19,7 @@ router.get("/search", function (req, res) {
 
         .exec(function (err, foundProducts) {
         if (err) return res.send(err);
-    
+        
         const context = { products: foundProducts };
         return res.render("Search", context);
     });
