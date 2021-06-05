@@ -10,11 +10,12 @@
     <%- include("partials/navbar.ejs"); %>
 
 
-
+    <a href="/new">Add New Product</a>
 
     <div class="products-container">
 
-            <% products.forEach(product => { %>
+
+                <% products.forEach(product => { %>
         
         <ul>
 
@@ -28,7 +29,7 @@
             <li><%= product.description %></li>
             
         </ul>
-            <% })%>
+                <% })%>
     </div>
 
 
