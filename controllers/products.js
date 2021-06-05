@@ -38,6 +38,18 @@ router.get("/search/:id", function (req, res) {
 
 
 
+// Delete
+router.delete("/:id", function (req, res) {
+	db.Product.findByIdAndDelete(req.params.id, function (err, deletedProduct) {
+		if (err) return res.send(err);
+
+		return res.redirect("/search");
+	});
+});
+
+
+
+
         // / when using redirect
         // render no /
 

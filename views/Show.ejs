@@ -21,7 +21,6 @@
         </nav>
     </header>
         
-    <h1>Homepage</h1>
     
     <ul>
         <li>
@@ -32,8 +31,15 @@
         <li><%= product.name %></li>
         <li><%= product.price %></li>
         <li><%= product.description %></li>  
+
+        <form action="/<%= product._id %>?_method=DELETE" method="POST">
+            <input type="submit" value="Delete Product" />
+        </form>
     </ul>
         
+
+    <!-- Delete -->
+
 
 
 
