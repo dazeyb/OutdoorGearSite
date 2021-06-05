@@ -38,6 +38,47 @@ router.get("/search/:id", function (req, res) {
 
 
 
+
+
+// Edit
+router.get("/:id/edit", function (req, res) {
+	db.Product.findById(req.params.id, function (err, foundProduct) {
+		if (err) return res.send(err);
+
+		const context = { product: foundProduct };
+		res.render("Edit", context);
+	});
+});
+
+
+
+// // Update
+// router.put("/:id", function (req, res) {
+// 	db.Article.findByIdAndUpdate(
+// 		// id to find
+// 		req.params.id,
+// 		// data to update
+// 		{
+// 			$set: {
+// 				// title: req.body
+// 				// body: req.body
+// 				...req.body,
+// 			},
+// 		},
+// 		// return the new object
+// 		{ new: true },
+// 		// callback function after the update has completed
+// 		function (err, updatedArticle) {
+// 			if (err) return res.send(err);
+// 			return res.redirect(`/articles/${updatedArticle._id}`);
+// 		}
+// 	);
+// });
+
+
+
+
+
 // Delete
 router.delete("/:id", function (req, res) {
 	db.Product.findByIdAndDelete(req.params.id, function (err, deletedProduct) {
@@ -46,6 +87,8 @@ router.delete("/:id", function (req, res) {
 		return res.redirect("/search");
 	});
 });
+
+
 
 
 
