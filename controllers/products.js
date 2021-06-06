@@ -35,11 +35,11 @@ router.get("/search/:id", function (req, res) {
 });
 
 
-// New
-router.get("/new", function (req, res) {
-		res.render("New", context);
-});
 
+// New
+router.get("/new", function(req,res) {
+    res.render("New");
+});
 
 
 // Create
@@ -47,7 +47,8 @@ router.post("/new", function (req, res) {
 	db.Product.create(req.body, function (err, createdProduct) {
 		if (err) return res.send(err);
 
-			foundProduct.products.push(createdProduct); // Add product to products array
+            // Plural products may cause issue
+			foundProduct.Product.push(createdProduct); // Add product to products array
 			foundProduct.save(); // save relationship to database, commits to memory
 
 			return res.redirect("/search");

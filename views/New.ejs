@@ -9,7 +9,39 @@
     <!-- Navbar -->
     <%- include("partials/navbar.ejs"); %>
 
+    <form action="/new" method="POST">
+        <p>
+            <input
+                type="text"
+                name="name"
+                placeholder="Product Name>"
+                value="Product name"
+            />
 
+            <input
+                type="text"
+                name="price"
+                placeholder="Price"
+                value="1"
+            />
+
+            <input
+                type="text"
+                name="img"
+                placeholder="Image URL"
+                value="url"
+            />
+
+            <input
+                type="text"
+                name="description"
+                placeholder="Summary"
+                value="A description"
+            />
+        </p>
+
+        <input type="submit" value="Add Product" />
+    </form>
 
 </body>
 </html>
