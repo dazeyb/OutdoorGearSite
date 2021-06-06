@@ -44,18 +44,17 @@ router.get("/new", function(req,res) {
 
 // Create
 router.post("/new", function (req, res) {
+
+    // Req.body requests info from form in html (not body)
 	db.Product.create(req.body, function (err, createdProduct) {
 		if (err) return res.send(err);
 
-            // Plural products may cause issue
-			foundProduct.Product.push(createdProduct); // Add product to products array
-			foundProduct.save(); // save relationship to database, commits to memory
+			// foundProduct.products.push(createdProduct); // Add product to products array/collection
+			// foundProduct.save(); // save relationship to database, commits to memory
 
 			return res.redirect("/search");
 	});
 });
-
-
 
 
 // Edit
