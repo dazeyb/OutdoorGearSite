@@ -8,6 +8,7 @@
     box-sizing: border-box;
 
     text-decoration: none;
+    font-family: 'Lora', serif;
 
     transition-property: all;
     transition-duration: .6s;
