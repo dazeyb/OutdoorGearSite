@@ -14,19 +14,22 @@
 
 
                 <% products.forEach(product => { %>
+       <div class="product-container">
+            <ul class="product-containersss">
+
+                <li>
+                    <a href="/search/<%= product._id %>">
+                        <img src="<%= product.img %>" alt="product-img">
+                    </a>
+                </li>
+                <li><%= product.name %></li>
+                <li>$<%= product.price %></li>
+
+            </ul>
+        </div>
         
-        <ul class="product-container">
-
-            <li>
-                <a href="/search/<%= product._id %>">
-                    <img src="<%= product.img %>" alt="product-img">
-                </a>
-            </li>
-            <li><%= product.name %></li>
-            <li>$<%= product.price %></li>
-
-        </ul>
                 <% })%>
+
     </div>
 
 

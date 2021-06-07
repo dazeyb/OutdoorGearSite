@@ -77,7 +77,8 @@ a:hover {
 }
 
 .product-container {
-
+    max-height: 35%;
+    max-width: 25%;
 }
 
 .left-panel {
