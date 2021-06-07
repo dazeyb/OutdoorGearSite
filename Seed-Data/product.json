@@ -6,83 +6,95 @@
             "img": "https://www.rei.com/media/321e994e-4d01-4b92-a500-a6a18c41fdab",
             "type": "Climbing",
             "price": 55
+            "stores": ["San Diego"]
         },
         {
             "name": "Edelrid Tommy Caldwell Pro DuoTec 9.6mm Dry Rope",
             "description": "This Edelrid Pro DuoTec 9.6mm dry rope was developed together with top climber Tommy Caldwell. Its very high sheath proportion makes it ideal for working routes or big-wall climbing.",
             "img": "https://www.rei.com/media/58f6b1f2-c724-425c-a5d0-34ae40699059?size=784x588",
             "type": "Climbing",
-            "price": 230
+            "price": 230,
+            "stores": ["San Diego"]
         },
         {
             "name": "La Sportiva Katana Lace Climbing Shoes",
             "description": "La Sportiva Katana Lace climbing shoes are constructed around P3® technology for excellent performance and comfort during gym climbs, bouldering, sport routes and beyond.",
             "img": "https://www.rei.com/media/47df55fc-0b69-44c9-b941-c220f40f26b8?size=784x588",
             "type": "Climbing",
-            "price": 195
+            "price": 195,
+            "stores": ["San Diego"]
         },
         {
             "name": "Scarpa Instinct VS Climbing Shoes - Women's",
             "description": "Built for sport climbers and boulderers who demand sensitivity and power, the Scarpa Instinct VS women's climbing shoes have a precise fit, tough synthetic uppers and grippy soles to help you send.",
             "img": "https://www.rei.com/media/a28c57e3-839e-44c5-a56b-dc6c4f626a1e?size=784x588",
             "type": "Climbing",
-            "price": 189
+            "price": 189,
+            "stores": ["San Diego"]
         },
         {
             "name": "Wild Country Friend Cam Set - #0.4, 0.5, 0.75, 1, 2, 3",
             "description": "Tested and proven by decades of climbers, the Wild Country Friend 6-cam set (#0.4, 0.5, 0.75, 1, 2, 3) has wide, rock-friendly cam lobes, high-friction machined faces and light yet stiff hollow axles.",
             "img": "https://www.rei.com/media/959303de-671a-471c-b63d-2dd5865f713b?size=784x588",
             "type": "Climbing",
-            "price": 405
+            "price": 405,
+            "stores": ["San Diego"]
         },
         {
             "name": "Eddyline Caribbean 12 FS Sit-On-Top Kayak",
             "description": "With an award-winning hull for efficient and stable paddling, the Eddyline Caribbean 12 FS sit-on-top kayak has a removable seat that's equally comfortable for paddling or serving as your camp chair.",
             "img": "https://www.rei.com/media/3247a96c-0a1f-4b0d-ab53-fa5606a9b1a1?size=784x588",
             "type": "Water",
-            "price": 1600
+            "price": 1600,
+            "stores": ["San Diego"]
         },
         {
             "name": "SIC Maui TAO Air Glide Inflatable Stand Up Paddle Board with Paddle - 11'",
             "description": "Having fun on the water is easy with the 11 ft. SIC Maui TAO Air Glide inflatable stand up paddle board, a versatile touring design that's as great for the whole family as it is for solo exploring.",
             "img": "https://www.rei.com/media/70bccd1b-ddcd-4064-9188-bcfd8b52d87d?size=784x588",
             "type": "Water",
-            "price": 700
+            "price": 700,
+            "stores": ["San Diego"]
         },
         {
             "name": "Roxy 2/2 mm Syncro Back-Zip Springsuit - Women's",
             "description": "Perfect for shoulder-season swims and surf sessions, the women's Roxy 2/2 mm Syncro Back-Zip springsuit takes the edge off those cold morning temps so you can stay in the water longer.",
             "img": "https://www.rei.com/media/0e7a4de8-5bc1-4d28-bdef-2662958a73fa?size=512x682",
             "type": "Water",
-            "price": 95
+            "price": 95,
+            "stores": ["San Diego"]
         },
         {
             "name": "Kelty Discovery 4 Tent",
             "description": "When you pack up the Subie for a few days of car camping or music fest-ing, you're not worried about traveling light—you wanna travel right. That means you want the 3-season Kelty Discovery 4 tent.",
             "img": "https://www.rei.com/media/2d4e3412-e581-48fc-824b-ffc1d6bb1130?size=784x588",
             "type": "Camp",
-            "price": 150
+            "price": 150,
+            "stores": ["San Diego"]
         },
         {
             "name": "GSI Outdoors Santoku Knife Set",
             "description": "Weighing in at 3 oz., this lightweight and highly packable GSI Outdoors Santoku Cut+Prep set makes whipping up backcountry meals a breeze.",
             "img": "https://www.rei.com/media/f10ca8c9-9891-4fef-9313-a6c0211e5764?size=784x588",
             "type": "Camp",
-            "price": 35
+            "price": 35,
+            "stores": ["San Diego"]
         },
         {
             "name": "ENO DoubleNest Printed Hammock",
             "description": "With ample room for 2, the ever-popular ENO DoubleNest Printed hammock assembles in seconds and is light enough to take backpacking, while being robust enough for backyard hangout sessions.",
             "img": "https://www.rei.com/media/2894df61-4c77-4651-81f0-edcc42eba9e1?size=784x588",
             "type": "Camp",
-            "price": 60
+            "price": 60,
+            "stores": ["San Diego"]
         },
         {
             "name": "REI Co-op Camp Chair - Kids'",
             "description": "Let your young ones enjoy a comfortable spot by the campfire just like you with this strong, sturdy and kid-friendly chair.",
             "img": "https://www.rei.com/media/da4d7d96-348a-42bc-abb8-9cdca7eaebbb?size=784x588",
             "type": "Camp",
-            "price": 30
+            "price": 30,
+            "stores": ["San Diego"]
         }
     ]
 }

@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 
 const productSchema = new mongoose.Schema(
     {
+
         name: {
             type: String,
             required: [true, "A name must be provided"],
@@ -24,6 +25,9 @@ const productSchema = new mongoose.Schema(
             type: Number,
             required: [true, "A price must be provided"],
         },
+        stores: 
+            [{type: mongoose.Schema.Types.ObjectId, ref: "Store",
+            required: [true, "At least one store must be selected"]}],
     },
     {
         timestamps: true,

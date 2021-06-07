@@ -2,7 +2,11 @@ const db = require('./models');
 const data = require('./Seed-Data/product.json');
 
 
-db.Product.deleteMany({}, (err, deletedProducts) => {
+    // Reseeds data into database so the website can be demoed 
+const run = async () => {
+
+    // Removes all products
+    await db.Product.deleteMany({}, (err, deletedProducts) => {
     db.Product.create(data.products, (err, seededProducts) => {
         if (err) return console.log(err);
         
@@ -11,9 +15,11 @@ db.Product.deleteMany({}, (err, deletedProducts) => {
         process.exit();
     });
 });
+};
 
+run ();
 
-// db.Store.deleteMany({}, (err, deletedStores) => {
+// await db.Store.deleteMany({}, (err, deletedStores) => {
 //     db.Store.create(data.stores, (err, seededStores) => {
 //         if (err) return console.log(err);
         
