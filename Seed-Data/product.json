@@ -2,7 +2,7 @@
     "products": [   
         {
             "name": "Black Diamong Harness - Men's",
-            "description": "Needs something",
+            "description": "For long days at the crag when comfort can make or break your work on a project, the Black Diamond Solution climbing harness uses Fusion Comfort Technology to deliver a comfortable, contoured fit.",
             "img": "https://www.rei.com/media/321e994e-4d01-4b92-a500-a6a18c41fdab",
             "type": "Climbing",
             "price": 55
@@ -65,7 +65,7 @@
         },
         {
             "name": "GSI Outdoors Santoku Knife Set",
-            "description": "Needs something",
+            "description": "Weighing in at 3 oz., this lightweight and highly packable GSI Outdoors Santoku Cut+Prep set makes whipping up backcountry meals a breeze.",
             "img": "https://www.rei.com/media/f10ca8c9-9891-4fef-9313-a6c0211e5764?size=784x588",
             "type": "Camp",
             "price": 35

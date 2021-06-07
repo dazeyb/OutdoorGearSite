@@ -2,33 +2,33 @@
 
     <title>Search</title>
 </head>
-
-
 <body>
 
     <!-- Navbar -->
     <%- include("partials/navbar.ejs"); %>
 
 
+    <a class="btn-add_product" href="/new">Add New Product</a>
+
+    <div class="all-products-container">
 
 
-    <div class="products-container">
+                <% products.forEach(product => { %>
+       <div class="product-container-parent">
 
-            <% products.forEach(product => { %>
+
+                <div class="product-img-parent">
+                    <a href="/search/<%= product._id %>">
+                        <img class="product-img"  src="<%= product.img %>" alt="product-img">
+                    </a>
+                </div>
+                <div class="product-name"><%= product.name %></div>
+                <div class="product-price">$<%= product.price %></div>
+
+        </div>
         
-        <ul>
+                <% })%>
 
-            <li>
-                <a href="/search/<%= product._id %>">
-                    <img src="<%= product.img %>" alt="product-img">
-                </a>
-            </li>
-            <li><%= product.name %></li>
-            <li><%= product.price %></li>
-            <li><%= product.description %></li>
-            
-        </ul>
-            <% })%>
     </div>
 
 
@@ -41,16 +41,12 @@
 
     </section>
 
-
-        
+     
     <section class="right-panel">
 
 
 
-
-
     </section>
-
 
 
 <footer>

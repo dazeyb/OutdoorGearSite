@@ -1,42 +1,54 @@
 <%- include("partials/base.ejs"); %>
 
-    <title>Edit</title>
+    <title>Add Product</title>
 </head>
 
+
 <body>
-    
-    <form action="/search/<%= product._id%>?_method=PUT" method="POST">
+
+    <!-- Navbar -->
+    <%- include("partials/navbar.ejs"); %>
+
+    <form action="/new" method="POST">
         <p>
             <input
                 type="text"
                 name="name"
                 placeholder="Product Name>"
-                value="<%= product.name %>"
+                value="Product name"
             />
 
             <input
                 type="text"
                 name="price"
                 placeholder="Price"
-                value="<%= product.price %>"
+                value="1"
             />
 
             <input
                 type="text"
                 name="img"
                 placeholder="Image URL"
-                value="<%= product.img %>"
+                value="url"
             />
 
             <input
                 type="text"
                 name="description"
                 placeholder="Summary"
-                value="<%= product.description %>"
+                value="A description"
             />
+
+            <input
+                type="text"
+                name="type"
+                placeholder="placeholder"
+                value="Camp"
+            />
+
         </p>
 
-        <input type="submit" value="Update" />
+        <input type="submit" value="Add Product" />
     </form>
 
 </body>
