@@ -2,8 +2,6 @@
 
     <title>Search</title>
 </head>
-
-
 <body>
 
     <!-- Navbar -->
@@ -12,12 +10,12 @@
 
     <a href="/new">Add New Product</a>
 
-    <div class="products-container">
+    <div class="all-products-container">
 
 
                 <% products.forEach(product => { %>
         
-        <ul>
+        <ul class="product-container">
 
             <li>
                 <a href="/search/<%= product._id %>">
@@ -25,9 +23,8 @@
                 </a>
             </li>
             <li><%= product.name %></li>
-            <li><%= product.price %></li>
-            <li><%= product.description %></li>
-            
+            <li>$<%= product.price %></li>
+
         </ul>
                 <% })%>
     </div>
@@ -42,16 +39,12 @@
 
     </section>
 
-
-        
+     
     <section class="right-panel">
 
 
 
-
-
     </section>
-
 
 
 <footer>

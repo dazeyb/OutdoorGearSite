@@ -9,9 +9,9 @@ const db = require("../models");
 // };
 
 // Index
-router.get("/search", function (req, res) {
+router.get("/search", async function (req, res) {
  
-        db.Product.find({})
+        await db.Product.find({})
 
         .exec(function (err, foundProducts) {
         if (err) return res.send(err);
@@ -66,8 +66,6 @@ router.get("/:id/edit", function (req, res) {
 		res.render("Edit", context);
 	});
 });
-
-
 
 
 
