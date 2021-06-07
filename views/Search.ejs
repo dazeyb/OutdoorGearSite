@@ -8,24 +8,23 @@
     <%- include("partials/navbar.ejs"); %>
 
 
-    <a href="/new">Add New Product</a>
+    <a class="btn-add_product" href="/new">Add New Product</a>
 
     <div class="all-products-container">
 
 
                 <% products.forEach(product => { %>
        <div class="product-container-parent">
-            <ul class="product-container-child">
 
-                <li class="li-img-parent">
+
+                <div class="product-img-parent">
                     <a href="/search/<%= product._id %>">
                         <img class="product-img"  src="<%= product.img %>" alt="product-img">
                     </a>
-                </li>
-                <li class="product-name"><%= product.name %></li>
-                <li class="product-price">$<%= product.price %></li>
+                </div>
+                <div class="product-name"><%= product.name %></div>
+                <div class="product-price">$<%= product.price %></div>
 
-            </ul>
         </div>
         
                 <% })%>
