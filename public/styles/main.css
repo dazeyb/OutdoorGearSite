@@ -36,11 +36,13 @@ a:hover {
 
     /* NavBar */
 .navbar {
-    background-color: #222;
+    background-color: #17252A;
     color: rgb(234, 236, 233);
     height: 70px;
     margin-bottom: 40px;
-    border-bottom: 4px solid green;
+    border-bottom: 4px solid #2A7A78;
+    font-family: 'Armata', sans-serif;
+    font-weight: 600 !important;
 }
 
 .logo {
@@ -49,12 +51,19 @@ a:hover {
 }
 
 .nav-link {
-    /* font-family: ; */
-    font-size: 15px;
+    color: #E0F2F0;
+    font-size: 16px;
     font-weight: 500;
     margin-left: 35px;
     letter-spacing: 2px;
 }
+
+.nav-link:hover {
+    color: #3AAFAA;
+    transform: scale(1.1);
+    transition-duration: .21s !important;
+}
+
 
 .logout {
     margin-right: 20px;
