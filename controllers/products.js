@@ -15,11 +15,21 @@ router.get("/search", async function (req, res) {
 
 		// Another way to fix async/await issue
         .exec(function (err, foundProducts) {
-        if (err) return res.send(err);
+   
+
+		if(err) {
+			console.log(err);
+			return res.render('Error');
+	   	}
         
         const context = { products: foundProducts };
         return res.render("Search", context);
     });
+});
+
+// Error
+router.get("/error", function(req,res) {
+    res.render("Error");
 });
 
 // Show
@@ -27,7 +37,12 @@ router.get("/search/:id", async function (req, res) {
  
 	// Go into DB, find all info for items with this ID. Turns ID to the rest of its info
     const foundProduct = await db.Product.findById(req.params.id).populate("stores");
-        
+    
+	if(err) {
+		console.log(err);
+		return res.render('Error');
+	   }
+
     const context = { product: foundProduct };
     return res.render("Show", context);
 });
