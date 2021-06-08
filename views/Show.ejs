@@ -33,7 +33,13 @@
         </li>
         <li><%= product.name %></li>
         <li><%= product.price %></li>
-        <li><%= product.description %></li>  
+        <li><%= product.description %></li>
+        <li>Available in these locations: <% product.stores.forEach(store => { %>
+            <%= store.name %>
+                                        <% })%></li>
+
+
+          
 
 
         <a href="/<%= product._id %>/edit">Edit</a>

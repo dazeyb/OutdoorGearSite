@@ -40,12 +40,10 @@ const data = require('./Seed-Data/product.json');
 
 
 // Seed stores first, manually add store IDS into names
- 
+
 // Then seed products
 // **** Early attempt to run seeded file 
 const run = async () => {
-
-    try {
     // Removes all products
     await db.Product.deleteMany({}, (err, deletedProducts) => {
 
@@ -56,11 +54,6 @@ const run = async () => {
         console.log(data.products.length, 'Products seeded successfully');
         
         process.exit();
-    } catch (err) {
-        console.log(err)
-        process.exit();
-    }
-    }
     });
 });
 };

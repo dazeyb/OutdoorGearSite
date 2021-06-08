@@ -6,7 +6,7 @@
             "img": "https://www.rei.com/media/321e994e-4d01-4b92-a500-a6a18c41fdab",
             "type": "Climbing",
             "price": 55,
-            "stores": ["San Diego"]
+            "stores": ["60beb434dbd88c5e458ab568"]
         },
         {
             "name": "Edelrid Tommy Caldwell Pro DuoTec 9.6mm Dry Rope",
@@ -14,7 +14,7 @@
             "img": "https://www.rei.com/media/58f6b1f2-c724-425c-a5d0-34ae40699059?size=784x588",
             "type": "Climbing",
             "price": 230,
-            "stores": ["San Diego"]
+            "stores": ["60beb455dbd88c5e458ab56a"]
         },
         {
             "name": "La Sportiva Katana Lace Climbing Shoes",
@@ -22,7 +22,7 @@
             "img": "https://www.rei.com/media/47df55fc-0b69-44c9-b941-c220f40f26b8?size=784x588",
             "type": "Climbing",
             "price": 195,
-            "stores": ["San Diego"]
+            "stores": ["60beb448dbd88c5e458ab569"]
         },
         {
             "name": "Scarpa Instinct VS Climbing Shoes - Women's",
@@ -30,7 +30,7 @@
             "img": "https://www.rei.com/media/a28c57e3-839e-44c5-a56b-dc6c4f626a1e?size=784x588",
             "type": "Climbing",
             "price": 189,
-            "stores": ["San Diego"]
+            "stores": ["60beb448dbd88c5e458ab569"]
         },
         {
             "name": "Wild Country Friend Cam Set - #0.4, 0.5, 0.75, 1, 2, 3",
@@ -38,7 +38,7 @@
             "img": "https://www.rei.com/media/959303de-671a-471c-b63d-2dd5865f713b?size=784x588",
             "type": "Climbing",
             "price": 405,
-            "stores": ["San Diego"]
+            "stores": ["60beb434dbd88c5e458ab568"]
         },
         {
             "name": "Eddyline Caribbean 12 FS Sit-On-Top Kayak",
@@ -46,7 +46,7 @@
             "img": "https://www.rei.com/media/3247a96c-0a1f-4b0d-ab53-fa5606a9b1a1?size=784x588",
             "type": "Water",
             "price": 1600,
-            "stores": ["San Diego"]
+            "stores": ["60beb455dbd88c5e458ab56a"]
         },
         {
             "name": "SIC Maui TAO Air Glide Inflatable Stand Up Paddle Board with Paddle - 11'",
@@ -54,7 +54,7 @@
             "img": "https://www.rei.com/media/70bccd1b-ddcd-4064-9188-bcfd8b52d87d?size=784x588",
             "type": "Water",
             "price": 700,
-            "stores": ["San Diego"]
+            "stores": ["60beb455dbd88c5e458ab56a"]
         },
         {
             "name": "Roxy 2/2 mm Syncro Back-Zip Springsuit - Women's",
@@ -62,7 +62,7 @@
             "img": "https://www.rei.com/media/0e7a4de8-5bc1-4d28-bdef-2662958a73fa?size=512x682",
             "type": "Water",
             "price": 95,
-            "stores": ["San Diego"]
+            "stores": ["60beb455dbd88c5e458ab56a"]
         },
         {
             "name": "Kelty Discovery 4 Tent",
@@ -70,7 +70,7 @@
             "img": "https://www.rei.com/media/2d4e3412-e581-48fc-824b-ffc1d6bb1130?size=784x588",
             "type": "Camp",
             "price": 150,
-            "stores": ["San Diego"]
+            "stores": ["60beb434dbd88c5e458ab568"]
         },
         {
             "name": "GSI Outdoors Santoku Knife Set",
@@ -78,7 +78,7 @@
             "img": "https://www.rei.com/media/f10ca8c9-9891-4fef-9313-a6c0211e5764?size=784x588",
             "type": "Camp",
             "price": 35,
-            "stores": ["San Diego"]
+            "stores": ["60beb448dbd88c5e458ab569"]
         },
         {
             "name": "ENO DoubleNest Printed Hammock",
@@ -86,7 +86,7 @@
             "img": "https://www.rei.com/media/2894df61-4c77-4651-81f0-edcc42eba9e1?size=784x588",
             "type": "Camp",
             "price": 60,
-            "stores": ["San Diego"]
+            "stores": ["60beb455dbd88c5e458ab56a"]
         },
         {
             "name": "REI Co-op Camp Chair - Kids'",
@@ -94,7 +94,7 @@
             "img": "https://www.rei.com/media/da4d7d96-348a-42bc-abb8-9cdca7eaebbb?size=784x588",
             "type": "Camp",
             "price": 30,
-            "stores": ["San Diego"]
+            "stores": ["60beb448dbd88c5e458ab569"]
         }
     ]
 }

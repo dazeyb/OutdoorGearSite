@@ -13,6 +13,7 @@ router.get("/search", async function (req, res) {
  
         await db.Product.find({})
 
+		// Another way to fix async/await issue
         .exec(function (err, foundProducts) {
         if (err) return res.send(err);
         
@@ -22,17 +23,15 @@ router.get("/search", async function (req, res) {
 });
 
 // Show
-router.get("/search/:id", function (req, res) {
+router.get("/search/:id", async function (req, res) {
  
-        db.Product.findById(req.params.id)
-
-        .exec(function (err, foundProduct) {
-        if (err) return res.send(err);
+	// Go into DB, find all info for items with this ID. Turns ID to the rest of its info
+    const foundProduct = await db.Product.findById(req.params.id).populate("stores");
         
-        const context = { product: foundProduct };
-        return res.render("Show", context);
-    });
+    const context = { product: foundProduct };
+    return res.render("Show", context);
 });
+
 
 
 
