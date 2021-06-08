@@ -39,7 +39,6 @@ a:hover {
     background-color: #17252A;
     color: rgb(234, 236, 233);
     height: 70px;
-    margin-bottom: 40px;
     border-bottom: 4px solid #2A7A78;
     font-family: 'Armata', sans-serif;
     font-weight: 600 !important;
@@ -73,18 +72,16 @@ a:hover {
 /* Landing Page ================================ */
 
 
-/* Pick Store ================================ */
+/* Select Store Page ================================ */
 .stores-flexbox {
-
 }
 
 
 /* Search Page ================================ */
 
 .btn-add_product {
+    margin: 10px auto 0 auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 50%;
     text-align: center;
     text-decoration: none !important;
@@ -95,19 +92,13 @@ a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-left: 2%;
-    margin-right: 4%;
+    margin: 15px 4% 0 2%;
 }
 
 .product-container-parent {
-    /* height: 30%;
-    width: 25%;
-    max-height: 65px;
-    max-width: 25%; */
     flex: 1 1 300px;
     position: relative;
     overflow: hidden;
-    /* border: red solid 4px; */
     height: 400px;
     width: 300px;
     margin-bottom: 10px;
@@ -116,10 +107,6 @@ a:hover {
 .product-container-parent, .product-img-parent, img {
     object-fit: contain;
 }
-
-/* .product-container-child {
-    padding: 0;
-} */
 
 .product-img-parent {
     height: 300px;
@@ -149,13 +136,3 @@ a:hover {
     margin-top: 2%;
 }
 
-
-
-
-.left-panel {
-
-}
-
-.right-panel {
-
-}
