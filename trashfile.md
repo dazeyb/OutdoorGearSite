@@ -15,3 +15,7 @@ Store page:
 
 Show page:
     Flexbox
+
+Error Handling:
+    Incomplete forms: Create/update
+
