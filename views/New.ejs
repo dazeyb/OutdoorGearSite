@@ -9,6 +9,12 @@
     <!-- Navbar -->
     <%- include("partials/navbar.ejs"); %>
 
+    <% if (error) { %>
+        
+        <h1> <%= error %> </h1>
+
+    <% } %>
+
     <form action="/new" method="POST">
         <p>
             <input

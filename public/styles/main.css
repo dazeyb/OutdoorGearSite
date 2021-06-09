@@ -126,7 +126,7 @@ video, .img-clouds {
 }
 
 /* After creates fake element addded into DOM we can modify etc. */
-.video-container:after {
+.video-container:after, .img-clouds_container:after {
     content: "";
      /* background: linear-gradient(to top, #2c3e50, #4ca1af); */
      background: linear-gradient(to top, #17252A, #2A7A78);

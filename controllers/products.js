@@ -60,15 +60,21 @@ router.get("/search/:id", async function (req, res) {
 
 // New
 router.get("/new", function(req,res) {
-    res.render("New");
+    res.render("New", { error: false });
 });
 
 
 // Create
 router.post("/new", function (req, res) {
 
+	if (!req.body.name || !req.body.price || !req.body.description || !req.body.type) { 
+	return res.render("New", {
+		error: "All boxes must be filled to create a new product"
+	})};
+
     // Req.body requests info from form in html (not body)
 	db.Product.create(req.body, function (err, createdProduct) {
+
 		if (err) return res.send(err);
 
 			// foundProduct.products.push(createdProduct); // Add product to products array/collection
