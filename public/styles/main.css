@@ -154,7 +154,7 @@ video, .img-clouds {
     margin-right: 30%;  */
 }
 
-    .btn-employee, .btn-guest, {
+    .btn-employee, .btn-guest {
         font-family: 'Armata', sans-serif;
         background: #17252A;
         color: white;
@@ -314,7 +314,6 @@ video, .img-clouds {
 .product-price:hover {
 }
 
-
 /* Show Page ================================ */
 
 
@@ -362,7 +361,6 @@ video, .img-clouds {
     text-align: center;
     margin-top: 2%;
 }
-
 
 
 /* Error Page ================================ */
