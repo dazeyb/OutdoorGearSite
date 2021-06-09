@@ -1,4 +1,4 @@
-/* Colors
+/* Color Palette
 17252A
 2B7A78
 3AAFA9
@@ -36,6 +36,12 @@ body {
 
 a:hover {
     cursor: pointer;
+}
+
+
+.container-zi-1 {
+    position: absolute;
+    z-index: 1;
 }
 
 .container-zi1 {
@@ -101,7 +107,7 @@ a:hover {
 
 
 
-video {
+video, .img-clouds {
     object-fit: cover;
     width: 100vw;
     height: 100vh;
@@ -111,7 +117,7 @@ video {
     z-index: -2;
 }
 
-.video-container {
+.video-container, .img-clouds_container {
     width: 100vw;
     height: 100vh;
     position: absolute;

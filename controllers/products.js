@@ -27,24 +27,32 @@ router.get("/search", async function (req, res) {
     });
 });
 
+
 // Error
 router.get("/error", function(req,res) {
     res.render("Error");
 });
 
+
 // Show
 router.get("/search/:id", async function (req, res) {
- 
-	// Go into DB, find all info for items with this ID. Turns ID to the rest of its info
-    const foundProduct = await db.Product.findById(req.params.id).populate("stores");
-    
-	if(err) {
-		console.log(err);
-		return res.render('Error');
-	   }
+	try {
+		// Go into DB, find all info for items with this ID. Turns ID to the rest of its info
+		const foundProduct = await db.Product.findById(req.params.id).populate("stores");
+		
+		// if (err) {
+		// 	console.log(err);
+		// 	return res.render("Error");
+		// }
 
-    const context = { product: foundProduct };
-    return res.render("Show", context);
+		// added await
+		const context = await { product: foundProduct };
+		return res.render("Show", context);
+
+	} catch (err) {
+	return res.render("Error");	
+	}
+
 });
 
 
