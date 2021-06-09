@@ -16,7 +16,7 @@
     <% } %>
 
     <form action="/new" method="POST">
-        <p>
+        <p>Product Name: 
             <input
                 type="text"
                 name="name"
@@ -25,6 +25,7 @@
                 required="required"
             />
 
+            Product Price: 
             <input
                 type="number"
                 name="price"
@@ -33,14 +34,16 @@
                 required="required"
             />
 
+            Img URL: 
             <input
                 type="text"
                 name="img"
                 placeholder="Image URL"
-                value="url"
+                value="https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fa%2Fac%2FNo_image_available.svg%2F600px-No_image_available.svg.png&imgrefurl=https%3A%2F%2Fast.m.wikipedia.org%2Fwiki%2FFicheru%3ANo_image_available.svg&tbnid=NF-z0Y67xzPPBM&vet=12ahUKEwiMqfavzovxAhXUwJcIHV2DBwoQMygAegUIARDEAQ..i&docid=LsTd-zP12L0ZdM&w=600&h=600&itg=1&q=no%20image&ved=2ahUKEwiMqfavzovxAhXUwJcIHV2DBwoQMygAegUIARDEAQ"
                 required="required"
             />
-
+            
+            Product Description: 
             <input
                 type="text"
                 name="description"
@@ -49,15 +52,15 @@
                 required="required"
             />
 
+            Activity Type: 
             <select name="type">
-                <option>Activity Type</option>
                 <option value="Camp">Camp</option>
                 <option value="Water">Water</option>
                 <option value="Climb">Climb</option>
             </select>
 
-            <select name="type">
-                <option>Store</option>
+            Activity Type: 
+            <select name="store">
                 <option value="San Diego">San Diego</option>
                 <option value="Los Angeles">Los Angeles</option>
                 <option value="San Francisco">San Francisco</option>
