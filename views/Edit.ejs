@@ -34,6 +34,23 @@
                 placeholder="Summary"
                 value="<%= product.description %>"
             />
+
+            <select name="type">
+                <option>Activity Type</option>
+                <option value="Camp">Camp</option>
+                <option value="Water">Water</option>
+                <option value="Climb">Climb</option>
+            </select>
+
+            <select name="type">
+                <option value="<%= product.store %>">Store</option>
+                <option value="San Diego">San Diego</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="San Francisco">San Francisco</option>
+            </select>
+
+
+
         </p>
 
         <input type="submit" value="Update" />

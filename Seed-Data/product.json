@@ -1,10 +1,18 @@
 {
     "products": [   
         {
+            "name": "La Sportiva Katana Lace Climbing Shoes",
+            "description": "La Sportiva Katana Lace climbing shoes are constructed around P3® technology for excellent performance and comfort during gym climbs, bouldering, sport routes and beyond.",
+            "img": "https://www.rei.com/media/47df55fc-0b69-44c9-b941-c220f40f26b8?size=784x588",
+            "type": "Climb",
+            "price": 195,
+            "stores": ["60beb448dbd88c5e458ab569"]
+        },
+        {
             "name": "Black Diamond Harness - Men's",
             "description": "For long days at the crag when comfort can make or break your work on a project, the Black Diamond Solution climbing harness uses Fusion Comfort Technology to deliver a comfortable, contoured fit.",
             "img": "https://www.rei.com/media/321e994e-4d01-4b92-a500-a6a18c41fdab",
-            "type": "Climbing",
+            "type": "Climb",
             "price": 55,
             "stores": ["60beb434dbd88c5e458ab568"]
         },
@@ -12,23 +20,15 @@
             "name": "Edelrid Tommy Caldwell Pro DuoTec 9.6mm Dry Rope",
             "description": "This Edelrid Pro DuoTec 9.6mm dry rope was developed together with top climber Tommy Caldwell. Its very high sheath proportion makes it ideal for working routes or big-wall climbing.",
             "img": "https://www.rei.com/media/58f6b1f2-c724-425c-a5d0-34ae40699059?size=784x588",
-            "type": "Climbing",
+            "type": "Climb",
             "price": 230,
             "stores": ["60beb455dbd88c5e458ab56a"]
-        },
-        {
-            "name": "La Sportiva Katana Lace Climbing Shoes",
-            "description": "La Sportiva Katana Lace climbing shoes are constructed around P3® technology for excellent performance and comfort during gym climbs, bouldering, sport routes and beyond.",
-            "img": "https://www.rei.com/media/47df55fc-0b69-44c9-b941-c220f40f26b8?size=784x588",
-            "type": "Climbing",
-            "price": 195,
-            "stores": ["60beb448dbd88c5e458ab569"]
         },
         {
             "name": "Scarpa Instinct VS Climbing Shoes - Women's",
             "description": "Built for sport climbers and boulderers who demand sensitivity and power, the Scarpa Instinct VS women's climbing shoes have a precise fit, tough synthetic uppers and grippy soles to help you send.",
             "img": "https://www.rei.com/media/a28c57e3-839e-44c5-a56b-dc6c4f626a1e?size=784x588",
-            "type": "Climbing",
+            "type": "Climb",
             "price": 189,
             "stores": ["60beb448dbd88c5e458ab569"]
         },
@@ -36,7 +36,7 @@
             "name": "Wild Country Friend Cam Set - #0.4, 0.5, 0.75, 1, 2, 3",
             "description": "Tested and proven by decades of climbers, the Wild Country Friend 6-cam set (#0.4, 0.5, 0.75, 1, 2, 3) has wide, rock-friendly cam lobes, high-friction machined faces and light yet stiff hollow axles.",
             "img": "https://www.rei.com/media/959303de-671a-471c-b63d-2dd5865f713b?size=784x588",
-            "type": "Climbing",
+            "type": "Climb",
             "price": 405,
             "stores": ["60beb434dbd88c5e458ab568"]
         },

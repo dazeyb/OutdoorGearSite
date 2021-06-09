@@ -15,17 +15,16 @@
                 <% products.forEach(product => { %>
        <div class="product-container-parent">
 
-
-                <div class="product-img-parent deco-none">
+           <div class="product-img-parent deco-none">
                     <a class="text-decoration-none" href="/search/<%= product._id %>">
                         <img class="product-img"  src="<%= product.img %>" alt="product-img">
                     </div>
-                    
-                    <div class="parent-name-price">
-                        <div class="product-name"><%= product.name %></div>
-                        <div class="product-price">$<%= product.price %></div>
-                    </div>
-                </a>
+
+                        <div class="parent-name-price">
+                            <div class="product-name"><%= product.name %></div>
+                            <div class="product-price">$<%= product.price %></div>
+                        </div>
+                    </a>
         </div>
         
                 <% })%>
