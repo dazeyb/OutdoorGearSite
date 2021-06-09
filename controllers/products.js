@@ -13,40 +13,68 @@ router.get("/search", async function (req, res) {
  
         await db.Product.find({})
 
+		// Another way to fix async/await issue
         .exec(function (err, foundProducts) {
-        if (err) return res.send(err);
+   
+
+		if(err) {
+			console.log(err);
+			return res.render('Error');
+	   	}
         
         const context = { products: foundProducts };
         return res.render("Search", context);
     });
 });
 
-// Show
-router.get("/search/:id", function (req, res) {
- 
-        db.Product.findById(req.params.id)
 
-        .exec(function (err, foundProduct) {
-        if (err) return res.send(err);
-        
-        const context = { product: foundProduct };
-        return res.render("Show", context);
-    });
+// Error
+router.get("/error", function(req,res) {
+    res.render("Error");
 });
+
+
+// Show
+router.get("/search/:id", async function (req, res) {
+	try {
+		// Go into DB, find all info for items with this ID. Turns ID to the rest of its info
+		const foundProduct = await db.Product.findById(req.params.id).populate("stores");
+		
+		// if (err) {
+		// 	console.log(err);
+		// 	return res.render("Error");
+		// }
+
+		// added await
+		const context = await { product: foundProduct };
+		return res.render("Show", context);
+
+	} catch (err) {
+	return res.render("Error");	
+	}
+
+});
+
 
 
 
 // New
 router.get("/new", function(req,res) {
-    res.render("New");
+    res.render("New", { error: false });
 });
 
 
 // Create
 router.post("/new", function (req, res) {
 
+	if (!req.body.name || !req.body.price || !req.body.description || !req.body.type) { 
+	return res.render("New", {
+		error: "All boxes must be filled to create a new product"
+	})};
+
     // Req.body requests info from form in html (not body)
 	db.Product.create(req.body, function (err, createdProduct) {
+
 		if (err) return res.send(err);
 
 			// foundProduct.products.push(createdProduct); // Add product to products array/collection

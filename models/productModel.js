@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 
 const productSchema = new mongoose.Schema(
     {
+
         name: {
             type: String,
             required: [true, "A name must be provided"],
@@ -13,8 +14,8 @@ const productSchema = new mongoose.Schema(
             required: [true, "A description must be provided"],
         },
         img: {
-            type: String,
-            required: [true, "An img url must be provided"],
+            type: String
+            // required: [true, "An img url must be provided"],
         },
         type: {
             type: String,
@@ -24,6 +25,9 @@ const productSchema = new mongoose.Schema(
             type: Number,
             required: [true, "A price must be provided"],
         },
+        stores: 
+            [{type: mongoose.Schema.Types.ObjectId, ref: "Store"}]
+            // required: [true, "At least one store must be selected"]}],
     },
     {
         timestamps: true,
