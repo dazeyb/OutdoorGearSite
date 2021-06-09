@@ -19,11 +19,13 @@
                 <div class="product-img-parent">
                     <a href="/search/<%= product._id %>">
                         <img class="product-img"  src="<%= product.img %>" alt="product-img">
-                    </a>
-                </div>
-                <div class="product-name"><%= product.name %></div>
-                <div class="product-price">$<%= product.price %></div>
-
+                    </div>
+                    
+                    <div class="parent-name-price">
+                        <div class="product-name deco-none"><%= product.name %></div>
+                        <div class="product-price deco-none">$<%= product.price %></div>
+                    </div>
+                </a>
         </div>
         
                 <% })%>
