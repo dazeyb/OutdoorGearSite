@@ -23,7 +23,8 @@ FEFFFF */
 }
 
 .deco-none {
-    text-decoration: none;
+    text-decoration: none !important;
+
 }
 
 ul {
@@ -258,16 +259,23 @@ video, .img-clouds {
 
 .parent-name-price {
     height: 15%;
-    border-left: solid 8px black;
-    border-right: solid 8px black;
+    border-left: solid 8px #3AAFA9;
+    border-right: solid 8px #3AAFA9;
     /* border-right: solid 8px gradient (90deg, rgba(43,122,120,1) 15%, rgba(58,175,169,1) 50%, rgba(222,242,241,1) 100%); */
     border-radius: 35px;
 }
+
+.parent-name-price:hover {
+    border-top: solid 4px #3AAFA9;
+    border-bottom: solid 4px #3AAFA9;
+
 
 .product-name, .product-price {
     /* justify-content: center; */
     text-align: center;
     font-weight: 600;
+    color: #17252A;
+    overflow: hidden;
 }
 
 .product-name {
