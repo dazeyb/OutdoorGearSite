@@ -154,7 +154,7 @@ video, .img-clouds {
     margin-right: 30%;  */
 }
 
-    .btn-employee, .btn-guest {
+    .btn-employee, .btn-guest, {
         font-family: 'Armata', sans-serif;
         background: #17252A;
         color: white;
@@ -314,6 +314,7 @@ video, .img-clouds {
 .product-price:hover {
 }
 
+
 /* Show Page ================================ */
 
 
@@ -361,3 +362,25 @@ video, .img-clouds {
     text-align: center;
     margin-top: 2%;
 }
+
+
+
+/* Error Page ================================ */
+
+
+.index-btn_container {
+    font-family: 'Armata', sans-serif;
+    background: #17252A;
+    color: white;
+    border: #DEF2F1 groove 3px;
+    opacity: 0.7;
+
+    font-size: 30px;
+    letter-spacing: 7px;
+    padding: 15px 25px 15px 25px;
+    transition-duration: 1.3s !important;
+    transition-property: all !important;
+    transition-timing-function: ease-in-out !important;
+    margin-top: 4%;
+    margin-left: 4%;
+} 
