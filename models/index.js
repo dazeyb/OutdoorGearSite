@@ -6,7 +6,7 @@ const dbUrl = process.env.MONGODB_URI;
 
 
 mongoose
-    .connect( process.env.MONGODB_URI || dbUrl ), {
+    .connect( process.env.MONGODB_URI || dbUrl , {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useCreateIndex: true,
