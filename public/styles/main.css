@@ -154,14 +154,18 @@ video, .img-clouds {
 }
 
     .btn-employee, .btn-guest {
-        /* padding: 20px; */
-        /* font-family: 'Ubuntu', sans-serif; */
         font-family: 'Armata', sans-serif;
-        background: black;
+        background: #17252A;
         color: white;
+        border: #DEF2F1 groove 3px;
+        opacity: 0.7;
+
         font-size: 30px;
         letter-spacing: 7px;
         padding: 15px 25px 15px 25px;
+        transition-duration: 1.3s !important;
+        transition-property: all !important;
+        transition-timing-function: ease-in-out !important;
         /* margin: 20% 30% 0 30%; */
     } 
 
@@ -176,18 +180,22 @@ video, .img-clouds {
     }
 
     .btn-employee:hover {
-        margin-right: 6%;
         border-radius: 5px 50px 5px 50px;
     }
 
     .btn-guest:hover {
-        margin-left: 6%;
         border-radius: 50px 5px 50px 5px;
     }
 
     .btn-employee:hover, .btn-guest:hover {
-        transition-duration: 1.3s !important;
-        transition-property: all !important;
+        font-family: 'Armata', sans-serif;
+        background: none;
+        color: #FEFFFF;
+        border: #FEFFFF dotted 3px;
+        opacity: 1;
+
+        font-size: 27px;
+        letter-spacing: 6px;
     }
 
 /* Select Store Page ================================ */
