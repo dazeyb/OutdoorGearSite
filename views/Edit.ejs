@@ -5,7 +5,10 @@
 
 <body>
     
-    <form action="/search/<%= product._id%>?_method=PUT" method="POST">
+    <!-- Navbar -->
+    <%- include("partials/navbar.ejs"); %>        
+
+    <form class="form-edit-parent" action="/search/<%= product._id%>?_method=PUT" method="POST">
         <p>
             <input
                 type="text"

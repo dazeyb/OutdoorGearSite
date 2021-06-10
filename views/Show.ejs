@@ -10,30 +10,33 @@
         <%- include("partials/navbar.ejs"); %>        
     
         <section class="show-product-container">
-
             <div class="show-img-parent">
                 <img class="show-img" src="<%= product.img %>" alt="product-img">
             </div>
 
             <div class="show-product-info">
                 <p class="show-product-name"><%= product.name %></p>
+
+                <hr class="show-hr">
+
                 <p class="show-product-price">$<%= product.price %></p>
+
+                <div class="show-btns-parent">
+                    <!-- Edit Button -->
+                    <a class="btn btn-edit" href="/<%= product._id %>/edit">Edit</a>
+
+                    <!-- Delete Button -->
+                    <form class="btn btn-delete" action="/<%= product._id %>?_method=DELETE" method="POST">Delete
+                        <input type="hidden"/>
+                    </form>
+                </div>
+            </div>
+                
+                <p class="show-product-description"><%= product.description %></p>
                 <p class="show-product-store">Available at this location: <% product.stores.forEach(store => { %>
                     <%= store.name %> <% })%></p>
-                <p class="show-product-description"><%= product.description %></p>
-            </div>
-
-        </section>
-
-
-        <!-- Edit Button -->
-        <a class="btn btn-lg" href="/<%= product._id %>/edit">Edit</a>
-
-        <!-- Delete Button -->
-        <form action="/<%= product._id %>?_method=DELETE" method="POST">
-            <input type="submit" value="Delete Product" />
-        </form>
-
+       
+            </section>
 
 </body>
 </html>

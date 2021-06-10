@@ -397,49 +397,129 @@ video, .img-clouds {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     margin: 15px 4% 0 2%;
-    /* width: 100%;
-    height: 100%; */
+    width: 100%;
+    height: 100%;
 }
 
-.show-img {
+.show-img-parent {
+    width: 40%;
+    height: 40%;
+    align-self: flex-start;
+}
+
+    .show-img {
     /* flex: 1 1 500px; */
     /* position: relative; */
     overflow: hidden;
-    width: 30%;
-    height: 50%;
     margin-top: 6%;
     margin-left: 8%;
-}
+    }
 
 .show-product-img:hover {
     transform: scale(1.07);
 }
 
 .show-product-info {
-    flex-wrap: wrap;
 }
-
 
 .show-product-name, .show-product-price {
     /* text-align: center; */
     font-weight: 600;
+    font-size: 40px;
     /* width: 40%; */
 }
 
-
 .show-product-name {
     /* text-align: center; */
-    margin-top: 3%;
+    font-size: 40px;
     overflow: visible;
 }
 
+.show-hr {
+    border-top: 4px solid #3AAFA9;
+}
+
 .show-product-price {
-    /* text-align: center; */
+    text-align: center;
     margin-top: 2%;
 }
 
+.show-btns-parent {
+    display: flex;
+    margin-top: 50px;
+}
+
+
+.btn-edit, .btn-delete {
+    font-family: 'Hammersmith One', sans-serif;
+    display: block;
+    text-align: center;
+    text-decoration: none !important;
+    font-size: 28px;
+    color: #cfe6e4;
+    transition-timing-function: ease;
+    transition-duration: .6s !important;
+    margin-top: 30px;
+}
+
+.btn-edit {
+    margin: 0 10% 0 17%;
+    border: outset 5px #365966;
+    background: #2B7A78;
+    padding: 5px 40px;
+    
+}
+
+.btn-delete {
+    margin: 0 10% 0 10%;
+    border: outset 5px #365966;
+    background: #2B7A78;
+    padding: 5px 50px;
+}
+
+.btn-edit:hover, .btn-delete:hover {
+    font-size: 28px;
+    /* letter-spacing: 3px; */
+    color: #c5f8f4;
+    transform: scale(1.1);
+    /* padding: 5px 30px 6px 30px; */
+}
+
+.btn-edit:hover {
+    color: #e7f4f8;
+    border: inset 5px #5a7d8a;
+    background: #0e3d3c;
+}
+
+.btn-delete:hover {
+    color: #e7f4f8;
+    border: inset 5px #b8c3c7;
+    background: #621515;
+}
+
+.show-product-description, .show-product-store {
+    font-size: 22px;
+    width: 80%;
+    margin-left: 2%;
+}
+
+.show-product-description {
+    margin-top: 30px;
+}
+
+.show-product-store {
+    margin-top: 10px;
+}
+
+/* Edit Page ================================ */
+
+.form-edit-parent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 
 /* Error Page ================================ */
 
