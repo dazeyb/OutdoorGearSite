@@ -338,6 +338,7 @@ video, .img-clouds {
 }
 
 .parent-name-price {
+    justify-content: center;
     height: 17%;
     border-left: solid 8px #3AAFA9;
     border-right: solid 8px #3AAFA9;
@@ -365,8 +366,8 @@ video, .img-clouds {
     text-align: center !important;
     font-weight: 600;
     color: #17252A;
-    overflow: visible;
-    max-width: 70%;
+    overflow: hidden;
+    max-width: 100%;
     max-height: 100%;
 }
 
