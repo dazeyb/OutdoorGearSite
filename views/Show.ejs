@@ -16,29 +16,22 @@
             <div class="show-product-info">
                 <div class="show-product-name"><%= product.name %></div>
                 <div class="show-product-price">$<%= product.price %></div>
-                <div class="show-product-store">Available in these locations: <% product.stores.forEach(store => { %>
+                <div class="show-product-store">Available at this location: <% product.stores.forEach(store => { %>
                     <%= store.name %> <% })%></div>
                 <div class="show-product-description"><%= product.description %></div>
             </div>
 
         </section>
 
+        
+        <!-- Edit Button -->
         <a class="btn btn-lg" href="/<%= product._id %>/edit">Edit</a>
 
+        <!-- Delete Button -->
         <form action="/<%= product._id %>?_method=DELETE" method="POST">
             <input type="submit" value="Delete Product" />
         </form>
 
 
-        
-
-    <!-- Delete -->
-
-
-
-
 </body>
 </html>
-
-
-<!-- <img src="https://www.rei.com/media/321e994e-4d01-4b92-a500-a6a18c41fdab" alt=""> -->

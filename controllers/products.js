@@ -132,9 +132,7 @@ router.delete("/:id", function (req, res) {
 });
 
 
-
+module.exports = router;
 
         // / when using redirect
         // render no /
-
-module.exports = router;
