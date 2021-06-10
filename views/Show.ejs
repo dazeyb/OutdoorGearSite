@@ -15,6 +15,7 @@
             </div>
 
             <div class="show-product-info">
+                
                 <p class="show-product-name"><%= product.name %></p>
 
                 <hr class="show-hr">
@@ -22,6 +23,7 @@
                 <p class="show-product-price">$<%= product.price %></p>
 
                 <div class="show-btns-parent">
+                    
                     <!-- Edit Button -->
                     <a class="btn btn-edit" href="/<%= product._id %>/edit">Edit</a>
 
@@ -29,6 +31,7 @@
                     <form action="/<%= product._id %>?_method=DELETE" method="POST">
                         <input class="btn btn-delete" type="submit" value="Delete"/>
                     </form>
+
                 </div>
             </div>
                 
