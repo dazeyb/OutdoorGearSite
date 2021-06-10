@@ -26,8 +26,8 @@
                     <a class="btn btn-edit" href="/<%= product._id %>/edit">Edit</a>
 
                     <!-- Delete Button -->
-                    <form class="btn btn-delete" action="/<%= product._id %>?_method=DELETE" method="POST">Delete
-                        <input type="hidden"/>
+                    <form action="/<%= product._id %>?_method=DELETE" method="POST">
+                        <input class="btn btn-delete" type="submit" value="Delete"/>
                     </form>
                 </div>
             </div>

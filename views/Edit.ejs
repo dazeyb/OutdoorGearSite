@@ -9,7 +9,6 @@
     <%- include("partials/navbar.ejs"); %>        
 
     <form class="form-edit-parent" action="/search/<%= product._id%>?_method=PUT" method="POST">
-        <p>
             <input
                 type="text"
                 name="name"
@@ -56,7 +55,6 @@
                 <option value="San Francisco">San Francisco</option>
             </select>
 
-        </p>
 
         <input type="submit" value="Update" />
     </form>
