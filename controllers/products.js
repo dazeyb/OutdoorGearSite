@@ -43,12 +43,6 @@ router.get("/search/:id", async function (req, res) {
 		// Go into DB, find all info for items with this ID. Turns ID to the rest of its info
 		const foundProduct = await db.Product.findById(req.params.id).populate("stores");
 		
-		// if (err) {
-		// 	console.log(err);
-		// 	return res.render("Error");
-		// }
-
-		// added await
 		const context = await { product: foundProduct };
 		return res.render("Show", context);
 
@@ -57,7 +51,6 @@ router.get("/search/:id", async function (req, res) {
 	}
 
 });
-
 
 
 
@@ -89,20 +82,25 @@ router.post("/new", function (req, res) {
 
 
 // Edit
-router.get("/:id/edit", function (req, res) {
-	db.Product.findById(req.params.id, function (err, foundProduct) {
+router.get("/:id/edit", async function (req, res) {
+	try {
+	await db.Product.findById(req.params.id, function (err, foundProduct) {
 		if (err) return res.send(err);
 
 		const context = { product: foundProduct };
 		res.render("Edit", context);
 	});
+	} catch (err) {
+		return res.render("Error");	
+		}
 });
 
 
 
 // Update
-router.put("/search/:id", function (req, res) {
-	db.Product.findByIdAndUpdate(
+router.put("/search/:id", async function (req, res) {
+	try {
+	await db.Product.findByIdAndUpdate(
 		// id to find
 		req.params.id,
 		// data to update
@@ -121,6 +119,9 @@ router.put("/search/:id", function (req, res) {
 			return res.redirect(`/search/${updatedProduct._id}`);
 		}
 	);
+	} catch (err) {
+		return res.render("Error");	
+		}
 });
 
 
@@ -128,8 +129,8 @@ router.put("/search/:id", function (req, res) {
 // Delete
 router.delete("/:id", function (req, res) {
 	db.Product.findByIdAndDelete(req.params.id, function (err, deletedProduct) {
-		if (err) return res.send(err);
-
+		if (err) return res.render("Error");	
+		
 		return res.redirect("/search");
 	});
 });

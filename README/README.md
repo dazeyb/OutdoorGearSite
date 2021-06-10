@@ -121,3 +121,8 @@ Stretch Goals:
     Popup "This website uses cookies"
 
     Delete popup "Are you sure?"
+
+
+
+    ![wireframe-capstone](./wireframe-capstone.png)
+
