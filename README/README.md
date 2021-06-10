@@ -13,6 +13,7 @@ Further work could be done to alter this into an ecommerce site, but the focus w
 README Reqs:
     A link to your hosted working app.
         https://git.generalassemb.ly/dazeyb/capstone
+        https://fast-springs-90912.herokuapp.com/
 
     Link to your user stories - who are your users, what do they want, and why?
     Link to your wireframes – sketches of major views / interfaces in your application.
