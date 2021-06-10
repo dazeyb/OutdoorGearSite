@@ -9,21 +9,23 @@
         <!-- Navbar -->
         <%- include("partials/navbar.ejs"); %>        
     
-        <section class=".show-product-container">
-            
-            <img class="show-product-img" src="<%= product.img %>" alt="product-img">
+        <section class="show-product-container">
+
+            <div class="show-img-parent">
+                <img class="show-img" src="<%= product.img %>" alt="product-img">
+            </div>
 
             <div class="show-product-info">
-                <div class="show-product-name"><%= product.name %></div>
-                <div class="show-product-price">$<%= product.price %></div>
-                <div class="show-product-store">Available at this location: <% product.stores.forEach(store => { %>
-                    <%= store.name %> <% })%></div>
-                <div class="show-product-description"><%= product.description %></div>
+                <p class="show-product-name"><%= product.name %></p>
+                <p class="show-product-price">$<%= product.price %></p>
+                <p class="show-product-store">Available at this location: <% product.stores.forEach(store => { %>
+                    <%= store.name %> <% })%></p>
+                <p class="show-product-description"><%= product.description %></p>
             </div>
 
         </section>
 
-        
+
         <!-- Edit Button -->
         <a class="btn btn-lg" href="/<%= product._id %>/edit">Edit</a>
 
