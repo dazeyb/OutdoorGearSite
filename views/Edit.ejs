@@ -8,55 +8,66 @@
     <!-- Navbar -->
     <%- include("partials/navbar.ejs"); %>        
 
+    <div class="img-clouds_container">
+        <img class="img-clouds" src="/assets/cloudyforest.jpg" alt="">
+    </div>
+    
     <form class="form-edit-parent" action="/search/<%= product._id%>?_method=PUT" method="POST">
-            <input
+            <p class="form-field-description">Product Name:</p>
+            <input class="form-field"
                 type="text"
                 name="name"
                 placeholder="Product Name>"
                 value="<%= product.name %>"
                 required="required"
+                maxlength="100"
             />
-
-            <input
+            <p class="form-field-description">Price:</p>
+            <input class="form-field"
                 type="number"
                 name="price"
                 placeholder="Price"
                 value="<%= product.price %>"
                 required="required"
+                maxlength="4"
             />
 
-            <input
+            <p class="form-field-description">Image URL:</p>
+            <input class="form-field"
                 type="text"
                 name="img"
                 placeholder="Image URL"
                 value="<%= product.img %>"
                 required="required"
+                maxlength="2000"
             />
 
-            <input
+            <p class="form-field-description">Product Description:</p>
+            <input class="form-field"
                 type="text"
                 name="description"
                 placeholder="Summary"
                 value="<%= product.description %>"
                 required="required"
+                maxlength="1500"
             />
    
-            <select name="type">
+            <select class="form-field" name="type">
                 <option value="<%= product.type %>">Activity Type</option>
                 <option value="Camp">Camp</option>
                 <option value="Water">Water</option>
                 <option value="Climb">Climb</option>
             </select>
 
-            <select name="store">
-                <option value="<%= product.store %>">Store</option>
+            <select class="form-field" name="store">
+                <option value="<%= product.store %>">Store Available</option>
                 <option value="San Diego">San Diego</option>
                 <option value="Los Angeles">Los Angeles</option>
                 <option value="San Francisco">San Francisco</option>
             </select>
 
 
-        <input type="submit" value="Update" />
+        <input class="form-field" type="submit" value="Submit Changes" />
     </form>
 
 </body>

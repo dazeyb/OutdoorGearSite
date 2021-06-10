@@ -15,9 +15,13 @@
 
     <% } %>
 
-    <form action="/new" method="POST">
-        <p>Product Name: 
-            <input
+    <div class="img-foggy-mtn_container">
+        <img class="img-foggy-mtn" src="/assets/foggy-mtn.jpg" alt="">
+    </div>
+
+    <form class="form-edit-parent" action="/new" method="POST">
+        <p class="form-field-description">Product Name: </p>
+            <input class="form-field"
                 type="text"
                 name="name"
                 placeholder="Product Name>"
@@ -25,8 +29,8 @@
                 required="required"
             />
 
-            Product Price: 
-            <input
+            <p class="form-field-description">Product Price: </p>
+            <input class="form-field"
                 type="number"
                 name="price"
                 placeholder="Price"
@@ -34,17 +38,18 @@
                 required="required"
             />
 
-            Img URL: 
-            <input
+            <p class="form-field-description">Img URL: </p>   
+            <input class="form-field"
                 type="text"
                 name="img"
                 placeholder="Image URL"
                 value="https://www.rei.com/media/d4a2e88c-ceed-4d87-bf26-3c0b8fd75b15?size=784x588"
                 required="required"
+                maxlength="100"
             />
             
-            Product Description: 
-            <input
+            <p class="form-field-description">Product Description: </p> 
+            <input class="form-field"
                 type="text"
                 name="description"
                 placeholder="Summary"
@@ -52,23 +57,21 @@
                 required="required"
             />
 
-            Activity Type: 
-            <select name="type">
+            <p class="form-field-description">Activity Type: </p>  
+            <select class="form-field" name="type">
                 <option value="Camp">Camp</option>
                 <option value="Water">Water</option>
                 <option value="Climb">Climb</option>
             </select>
 
-            Available in this store: 
-            <select name="store">
+            <p class="form-field-description">Available in this store: </p>  
+            <select class="form-field" name="store">
                 <option value="San Diego">San Diego</option>
                 <option value="Los Angeles">Los Angeles</option>
                 <option value="San Francisco">San Francisco</option>
             </select>
 
-        </p>
-
-        <input type="submit" value="Add Product" />
+        <input class="form-field" type="submit" value="Add Product to Inventory" />
     </form>
 
 </body>
