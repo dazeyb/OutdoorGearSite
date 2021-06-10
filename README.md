@@ -1,18 +1,19 @@
 # capstone
 A capstone project for inventory management. Could be scaled to be an ecommerce store.
 
+Elevator Pitch: 
+
+How do you increase productivity in the workplace? Increase the engagement of the employees in their tasks, and decrease wasted time looking for products.
+
+Enter, this inventory management site. With a design that seeks to both relax and energize, while being easy on the eyes, the interactivity is meant to maintain engagement and add a playfulness to otherwise routine and monotonous tasks.
+
+Further work could be done to alter this into an ecommerce site, but the focus would be shifted.
+
+
 README Reqs:
     A link to your hosted working app.
         https://git.generalassemb.ly/dazeyb/capstone
 
-    A paragraph-long description (elevator pitch) of your project.
-        This project will be a inventory management app that a company could feasibly convert to an ecommerce store as well.
-        The usefulness comes from being able to view what is in stock, and add/remove/update the inventory as they see fit.
-        This will be developed into a fully developed elevator pitch
-
-    A list of the technologies used. -ln 22
-
-    A list of installation steps for the app itself and any dependencies - how would another developer run your site locally?
     Link to your user stories - who are your users, what do they want, and why?
     Link to your wireframes – sketches of major views / interfaces in your application.
     Link to your entity relationship diagrams – plan out your data relationships before coding.
@@ -26,27 +27,10 @@ Technologies Used:
     NodeJS
 
 
-Project Guidelines:
-    Create: New product
-    Read: Check
-    Update: Edit a product (Photo/description/name)
-    Destroy: Delete a product
-
-2 Models:
-
-    Users: One regular, one authorized (to delete/update/etc.)
-
-
-    Inventory Items:
-            Name: Name of product
-            Img: URL to img
-            Description: Short blurb describing the product
-            Price: $$$
-            Stock: Amount left in inventory
-            Type of Product: To enable different search filters
-
-
-Product Vision: 
+Installation Steps:
+    Open the file, move into the folder in your terminal, and install all dependencies. 
+    If on a windows device, type npm run dev in the terminal.
+    Otherwise, you will have to alter the "dev" code in the package.json file.
 
 
 User-Story: (Shopper)
@@ -63,7 +47,6 @@ Someone who is viewing the site to see what is in stock, and potentially make a 
     When they make these changes and submit, they will be redirected with the new queried search to see the results in the same format as before, on the right hand side.
 
     Click on one of these will bring them to a show-page of that product, with more information.
-
 
 
 Admin User-Story: (Employee)
@@ -135,4 +118,6 @@ Stretch Goals:
 
     Integrate an API (widget!)
 
-    "This website uses cookies"
+    Popup "This website uses cookies"
+
+    Delete popup "Are you sure?"

@@ -35,6 +35,10 @@ body {
     background-color: rgb(255,255,255);
 }
 
+a {
+    max-width: 35vw !important;
+    max-height: 35vh !important;
+}
 a:hover {
     cursor: pointer;
 }
@@ -90,6 +94,7 @@ a:hover {
     margin-left: 35px;
     letter-spacing: 2px;
     transition-duration: .8s !important;
+    transition: ease-in-out !important;
 }
 
 
@@ -173,20 +178,21 @@ video, .img-clouds {
 
     .btn-employee {
         margin-right: 6%;
-        border-radius: 50px 5px 50px 5px;
+        border-radius: 5px 50px 5px 50px;
     }
 
     .btn-guest{
         margin-left: 6%;
-        border-radius: 5px 50px 5px 50px;
+        border-radius: 50px 5px 50px 5px;
     }
 
     .btn-employee:hover {
-        border-radius: 5px 50px 5px 50px;
-    }
-
-    .btn-guest:hover {
         border-radius: 50px 5px 50px 5px;
+    }
+    
+    .btn-guest:hover {
+        border-radius: 5px 50px 5px 50px;
+        /* background: #e7f4ff radial-gradient(circle, transparent 1%, #b0bac2 1%) center/15000%; */
     }
 
     .btn-employee:hover, .btn-guest:hover {
@@ -199,6 +205,12 @@ video, .img-clouds {
         font-size: 27px;
         letter-spacing: 6px;
     }
+
+    /* btn-guest:active {
+        background-color: #6eb9f7;
+        background-size: 100%;
+        transition: background 0s;
+      } */
 
 
 /* Select Store Page ================================ */
@@ -271,7 +283,7 @@ video, .img-clouds {
 
 
 .btn-add_product {
-    font-family: 'Armata', sans-serif;
+    font-family: 'Oswald', sans-serif;
     
     margin: 15px auto 15px auto;
     display: block;
@@ -295,7 +307,7 @@ video, .img-clouds {
     background: #0e3d3c;
     font-size: 25px;
     letter-spacing: 2px;
-    color: #c5f8f4;
+    color: #e8fffd;
 }
 
 
@@ -330,6 +342,7 @@ video, .img-clouds {
 .product-img-parent {
     height: 300px;
     padding: 10px 10px 0 10px;
+    max-width: 35vw;
 }
 
 .product-img {
@@ -354,6 +367,7 @@ video, .img-clouds {
     border-radius: 30px;
     position: relative;
     z-index: 1;
+    max-width: 33vw;
 }
 
 .parent-name-price:hover {
@@ -421,10 +435,23 @@ video, .img-clouds {
     object-fit: contain;
     margin-top: 6%;
     margin-left: 8%;
+    transition-duration: 0.8s !important;
+    transition: ease-in-out !important;
     }
 
-.show-product-img:hover {
-    transform: scale(1.07);
+@keyframes skew {
+        60% {
+          transform: skew(-5deg, -5deg);
+        }
+        15% {
+            transform: skew(5deg, 5deg);
+          }
+}
+
+.show-img:hover {
+    animation: skew 5s infinite;
+    animation-direction: alternate;
+    transform: skew(5deg);
 }
 
 .show-product-info {
@@ -454,7 +481,8 @@ video, .img-clouds {
 }
 
 .show-hr {
-    border-top: 3px solid #30817d;
+    border-top: 5px solid #30817d;
+    opacity: .8;
 }
 
 .show-product-price {
@@ -470,7 +498,7 @@ video, .img-clouds {
 
 
 .btn-edit, .btn-delete {
-    font-family: 'Armata', sans-serif;
+    font-family: 'Oswald', sans-serif;
     display: block;
     text-align: center;
     text-decoration: none !important;
@@ -481,7 +509,7 @@ video, .img-clouds {
     border: inset 5px #2B7A78;
     background: rgb(23,37,42);
     transition: ease-in;
-    transition-duration: 0.6s !important;
+    transition-duration: 0.4s !important;
 }
 
 .btn-edit {
@@ -568,7 +596,7 @@ video, .img-clouds {
     padding: 7px 0;
     letter-spacing: 5px;
     font-size: 26px;
-    font-family: 'Hammersmith One', sans-serif !important;
+    font-family: 'Oswald', sans-serif !important;
 }
 
 .form-btn:hover {
@@ -610,7 +638,7 @@ input:focus {
 
 .img-foggy-mtn_container:after {
     content: "";
-     background: linear-gradient(to top, #17252A, #2A7A78);
+     background: linear-gradient(to top, rgb(38, 59, 66), #2A7A78);
 
     position: absolute;
 
@@ -626,7 +654,7 @@ input:focus {
 
 
 .index-btn_container {
-    font-family: 'Armata', sans-serif;
+    font-family: 'Oswald', sans-serif;
     background: #17252A;
     color: white;
     border: #DEF2F1 groove 3px;
@@ -643,13 +671,13 @@ input:focus {
     margin-left: 4%;
 } 
 
-.show-hr {
-    border-top: 12px solid #3AAFA9;
+.error-hr {
+    border-top: 3px solid #3AAFA9;
 }
 
 .btn-error {
     align-self: center;
-    font-family: 'Armata', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 700;
     color: orange;
 }
