@@ -8,50 +8,35 @@
     <%- include("partials/navbar.ejs"); %>
 
 
-    <a class="btn-add_product" href="/new"><i class="fas fa-plus plus-icon">   </i>Product</a>
+    <a class="btn-add_product" href="/new">Add Product</a>
 
     <div class="all-products-container">
 
                 <% products.forEach(product => { %>
-       <div class="product-container-parent">
 
-           <div class="product-img-parent deco-none">
-                    <a class="text-decoration-none" href="/search/<%= product._id %>">
-                        <img class="product-img"  src="<%= product.img %>" alt="product-img">
-                    </div>
+        <div class="product-container-parent">
+            <a class="text-decoration-none" href="/search/<%= product._id %>">
+                
+                <div class="product-img-parent deco-none">
+                    <img class="product-img"  src="<%= product.img %>" alt="product-img">  
+                </div>
+                   
+                
+                <div class="parent-name-price">
+                    <p class="product-name"><%= product.name %></p>
+                    <p class="product-price">$<%= product.price %></p>
+                </div>
 
-                        <div class="parent-name-price">
-                            <div class="product-name"><%= product.name %></div>
-                            <div class="product-price">$<%= product.price %></div>
-                        </div>
-                    </a>
-        </div>
-        
-                <% })%>
-
+            </a>
+        </div> <% })%>
+    
+    <!-- End of all-products-container -->
     </div>
-
-
-
-    <!-- <section class="left-panel">
-
-        <form action="">Form1</form>
-        <form action="">Form1</form>
-        <form action="">Form1</form>
-
-    </section>
-
-     
-    <section class="right-panel">
-
-
-
-    </section>
 
 
 <footer>
 
-</footer> -->
+</footer>
 
 
 
