@@ -10,7 +10,7 @@ const db = require("../models");
 
 // Index
 router.get("/search", async function (req, res) {
- 
+	try {
         await db.Product.find({})
 
 		// Another way to fix async/await issue
@@ -25,6 +25,9 @@ router.get("/search", async function (req, res) {
         const context = { products: foundProducts };
         return res.render("Search", context);
     });
+	} catch (err) {
+	return res.render("Error");	
+	}
 });
 
 
