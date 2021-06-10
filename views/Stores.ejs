@@ -6,12 +6,16 @@
 
     <!-- Navbar -->
     <%- include("partials/navbar.ejs"); %>
-    
-    <div class="stores-flexbox">
+    <div class="img-mtn_container">
+        <img class="img-mtn" src="/assets/mountain.jpg" alt="">
+    </div>
 
-        <a class="deco-none" href="">San Diego</a>
-        <a class="deco-none" href="">Los Angeles</a>
-        <a class="deco-none" href="">San Francisco</a>
+    <div class="stores-flexbox container-zi1">
+
+        <!-- When inventory is implemented, these will have unique data rendered -->
+        <a class="btn-sd deco-none" href="/Search">San Diego</a>
+        <a class="btn-la deco-none" href="/Search">Los Angeles</a>
+        <a class="btn-sf deco-none" href="/Search">San Francisco</a>
 
     </div>
     

@@ -12,13 +12,15 @@
                 name="name"
                 placeholder="Product Name>"
                 value="<%= product.name %>"
+                required="required"
             />
 
             <input
-                type="text"
+                type="number"
                 name="price"
                 placeholder="Price"
                 value="<%= product.price %>"
+                required="required"
             />
 
             <input
@@ -26,6 +28,7 @@
                 name="img"
                 placeholder="Image URL"
                 value="<%= product.img %>"
+                required="required"
             />
 
             <input
@@ -33,6 +36,7 @@
                 name="description"
                 placeholder="Summary"
                 value="<%= product.description %>"
+                required="required"
             />
    
             <select name="type">

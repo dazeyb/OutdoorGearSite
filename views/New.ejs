@@ -16,49 +16,55 @@
     <% } %>
 
     <form action="/new" method="POST">
-        <p>
+        <p>Product Name: 
             <input
                 type="text"
                 name="name"
                 placeholder="Product Name>"
                 value="Product name"
+                required="required"
             />
 
+            Product Price: 
             <input
-                type="text"
+                type="number"
                 name="price"
                 placeholder="Price"
                 value="1"
+                required="required"
             />
 
+            Img URL: 
             <input
                 type="text"
                 name="img"
                 placeholder="Image URL"
-                value="url"
+                value="https://www.google.com/imgres?imgurl=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Fno-image-available-icon-photo-camera-flat-vector-illustration-132483097.jpg&imgrefurl=https%3A%2F%2Fwww.dreamstime.com%2Fno-image-available-icon-photo-camera-flat-vector-illustration-image132483097&tbnid=57jbTkTzJzReMM&vet=12ahUKEwiMqfavzovxAhXUwJcIHV2DBwoQMygHegUIARDTAQ..i&docid=biTbknbojKNO_M&w=800&h=800&itg=1&q=no%20image&ved=2ahUKEwiMqfavzovxAhXUwJcIHV2DBwoQMygHegUIARDTAQ"
+                required="required"
             />
-
+            
+            Product Description: 
             <input
                 type="text"
                 name="description"
                 placeholder="Summary"
                 value="A description"
+                required="required"
             />
 
+            Activity Type: 
             <select name="type">
-                <option>Activity Type</option>
                 <option value="Camp">Camp</option>
                 <option value="Water">Water</option>
                 <option value="Climb">Climb</option>
             </select>
 
-            <select name="type">
-                <option>Store</option>
+            Available in this store: 
+            <select name="store">
                 <option value="San Diego">San Diego</option>
                 <option value="Los Angeles">Los Angeles</option>
                 <option value="San Francisco">San Francisco</option>
             </select>
-
 
         </p>
 
